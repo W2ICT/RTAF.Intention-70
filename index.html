@@ -1,0 +1,1042 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>เจตนารมณ์ ผบ.ทอ. พ.ศ.2570-2571</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#07142e;--navy2:#0c2147;--blue:#2f7bff;--cyan:#37d6ff;--gold:#e8b94a;--gold2:#ffd986;--ink:#e9f0ff;--mute:#9db2d8;--red:#ff5d6c;--green:#3fd68f;--yellow:#ffd84a}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#02060f;overflow:hidden;font-family:'Sarabun','Prompt',sans-serif;color:var(--ink)}
+#viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+#stage{width:1280px;height:720px;position:relative;transform-origin:center center;flex:none;overflow:hidden;border-radius:6px;box-shadow:0 20px 80px #000a}
+.slide{position:absolute;inset:0;padding:40px 60px 54px;opacity:0;visibility:hidden;transform:translateX(40px);transition:opacity .5s,transform .5s,visibility .5s;
+ background:radial-gradient(900px 500px at 85% -10%,#1c4ba633,transparent 60%),linear-gradient(160deg,rgba(7,20,46,.78) 0%,rgba(10,28,62,.72) 100%)}
+.slide::before{display:none}
+.slide.active{opacity:1;visibility:visible;transform:none;z-index:2}
+.slide.prev{transform:translateX(-40px)}
+.slide>*{position:relative}
+.hd{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+.hd .no{font-family:Prompt;font-weight:700;font-size:19px;color:var(--navy);background:linear-gradient(135deg,var(--gold2),var(--gold));border-radius:10px;padding:6px 12px;min-width:50px;text-align:center}
+.hd h2{font-family:Prompt;font-weight:600;font-size:32px;line-height:1.15}
+.hd small{display:block;font-family:Prompt;font-weight:400;font-size:14px;color:var(--cyan);letter-spacing:.1em;margin-top:2px}
+.hd::after{content:"";position:absolute;left:0;right:0;bottom:-10px;height:2px;background:linear-gradient(90deg,var(--gold),#e8b94a00 70%)}
+.foot{position:absolute!important;left:60px;right:60px;bottom:14px;display:flex;justify-content:space-between;font-size:13px;color:#7b90bb;font-family:Prompt;z-index:3}
+.foot b{color:var(--gold);font-weight:500}
+p,li{font-size:18px;line-height:1.5}
+.gold{color:var(--gold2)}.cy{color:var(--cyan)}
+.card{background:linear-gradient(160deg,#16306acc,#0c1f47e6);border:1px solid #3b6ad655;border-radius:16px;padding:14px 18px;position:relative}
+.card h3{font-family:Prompt;font-weight:600;font-size:20px;margin-bottom:5px;color:var(--gold2);line-height:1.25}
+.card p,.card li{font-size:16px;line-height:1.45;color:#dbe6ff}
+.pts{list-style:none}.pts li{position:relative;padding-left:16px;margin:3px 0}
+.pts li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--gold)}
+.row{display:flex;gap:16px}.col{display:flex;flex-direction:column;gap:12px}
+.grid{display:grid;gap:14px}.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.pill{display:inline-block;font-family:Prompt;font-size:13px;font-weight:500;padding:3px 12px;border-radius:99px;border:1px solid var(--cyan);color:var(--cyan)}
+.num{font-family:Prompt;font-weight:700;color:var(--navy);background:linear-gradient(135deg,var(--gold2),var(--gold));width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:16px;flex:none}
+.quote{font-family:Prompt;font-weight:500;color:var(--gold2)}
+.chip{display:flex;align-items:center;gap:10px}
+.tag{font-family:Prompt;font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--cyan)}
+.big{font-family:Prompt;font-weight:700;line-height:1;color:var(--gold2)}
+.small{font-size:15px!important}
+.org{padding:6px;border-radius:8px;background:#0a1a3d;font-family:Prompt;font-size:13px;text-align:center}
+.ph{position:relative;border-radius:14px;overflow:hidden;border:1px solid #e8b94a77;box-shadow:0 10px 30px #0008;flex:none}
+.ph img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.02)}
+.slide.active .ph img{animation:kb 14s ease-out both}
+@keyframes kb{from{transform:scale(1.02)}to{transform:scale(1.14)}}
+.ph .cap{position:absolute;left:0;right:0;bottom:0;padding:22px 12px 8px;font-family:Prompt;font-size:13px;line-height:1.3;background:linear-gradient(0deg,#02081ccc,transparent);color:#fff}
+.cover{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0}
+.cover .bg{position:absolute!important;inset:0;z-index:0;opacity:.5}
+.cover .bg img{width:100%;height:100%;object-fit:cover;object-position:50% 72%;filter:brightness(.32) saturate(1.1);animation:kb 20s ease-out both}
+.cover .bg::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,#0a1f4a55,#030a1dcc)}
+.cover .rings{position:absolute!important;inset:0;z-index:1;pointer-events:none}
+.cover>*:not(.bg):not(.rings){z-index:2}
+.cover h1{font-family:Prompt;font-weight:700;font-size:68px;letter-spacing:.04em;background:linear-gradient(180deg,#fff,#a9c3f0);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.1}
+.cover .sub{font-family:Prompt;font-size:40px;font-weight:600;letter-spacing:.3em;color:var(--gold2);margin-top:6px}
+.cover .name{font-family:Prompt;font-size:30px;margin-top:22px;font-weight:500}
+.cover .rank{font-size:20px;color:var(--mute)}
+.cover .quoteb{margin-top:28px;font-family:Prompt;font-size:20px;color:var(--gold2);border-top:1px solid #e8b94a66;padding-top:12px}
+.flow{display:flex;align-items:stretch}
+.step{flex:1;text-align:center;padding:14px 10px;border-radius:14px;background:linear-gradient(160deg,#173a7d,#0c2250);border:1px solid #3b6ad677;position:relative;cursor:pointer}
+.step+.step{margin-left:26px}
+.step+.step::before{content:"";position:absolute;left:-22px;top:50%;border:9px solid transparent;border-left:12px solid var(--gold);transform:translateY(-50%);animation:nudge 1.3s ease-in-out infinite}
+@keyframes nudge{50%{transform:translate(5px,-50%)}}
+.step b{display:block;font-family:Prompt;font-size:24px;color:var(--gold2)}
+.step span{font-size:15px;color:#cfe0ff;line-height:1.35;display:block;margin-top:4px}
+.fr{opacity:0;transform:translateY(26px) scale(.95);transition:opacity .6s cubic-bezier(.2,.8,.2,1),transform .6s cubic-bezier(.2,.8,.2,1)}
+.fr.on{opacity:1;transform:none}
+.card,.step{transition:opacity .6s,transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .3s,border-color .3s;cursor:pointer}
+.card.fr.on:hover,.step.fr.on:hover{transform:translateY(-4px);box-shadow:0 12px 34px #2f7bff55;border-color:#37d6ffcc}
+.card.fr.on.pop{transform:scale(1.06);z-index:30;box-shadow:0 0 0 2px var(--gold),0 20px 60px #000c;border-color:var(--gold);background:linear-gradient(160deg,#1d4390,#0e2a5e)}
+.slide.active::after{content:"";position:absolute;left:0;right:0;height:140px;top:-140px;background:linear-gradient(180deg,transparent,#37d6ff12,transparent);animation:scan 8s linear infinite;pointer-events:none}
+@keyframes scan{to{top:720px}}
+.flip{perspective:1000px;cursor:pointer;min-height:170px;position:relative}
+.flip .in{position:absolute;inset:0;transition:transform .7s cubic-bezier(.3,.7,.2,1);transform-style:preserve-3d}
+.flip.flipped .in{transform:rotateY(180deg)}
+.flip .f,.flip .b{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:16px;padding:14px 18px;border:1px solid #3b6ad655;background:linear-gradient(160deg,#16306aaa,#0c1f47cc)}
+.flip .b{transform:rotateY(180deg);background:linear-gradient(160deg,#5a4210,#1f1806);border-color:var(--gold)}
+.flip .hint{position:absolute;right:14px;bottom:8px;font-family:Prompt;font-size:12px;color:var(--cyan)}
+.flip .b .hint{color:var(--gold2)}
+.seg{transition:stroke-dasharray 1.3s cubic-bezier(.3,.7,.2,1) .3s,opacity .3s,stroke-width .3s}
+.slide:not(.active) .seg{stroke-dasharray:0 600}
+.donut[data-hl="r"] .seg:not(.sr),.donut[data-hl="g"] .seg:not(.sg),.donut[data-hl="y"] .seg:not(.sy){opacity:.2}
+.donut[data-hl="r"] .sr,.donut[data-hl="g"] .sg,.donut[data-hl="y"] .sy{stroke-width:44}
+@keyframes reveal{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes growx{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes growy{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.slide.active .unity{animation:reveal 1.2s cubic-bezier(.3,.7,.2,1) .3s both}
+.slide:not(.active) .unity{clip-path:inset(0 100% 0 0)}
+.slide.active .trl i{animation:growy .9s cubic-bezier(.3,.7,.2,1) both;transform-origin:bottom}
+.trl{display:flex;align-items:flex-end;gap:10px;height:140px}
+.trl i{flex:1;border-radius:8px 8px 0 0;display:flex;align-items:flex-start;justify-content:center;font-style:normal;font-family:Prompt;font-weight:700;color:var(--navy);padding-top:6px;background:linear-gradient(180deg,var(--cyan),var(--blue))}
+.trl i.t9{background:linear-gradient(180deg,var(--gold2),var(--gold))}
+.bl{transform-box:fill-box;transform-origin:center;animation:blp 1.8s ease-in-out infinite;transition:opacity .3s}
+@keyframes blp{50%{transform:scale(1.8)}}
+svg.rd[data-sel="fpv"] .bl:not(.b-fpv),svg.rd[data-sel="swarm"] .bl:not(.b-swarm),svg.rd[data-sel="fiber"] .bl:not(.b-fiber),svg.rd[data-sel="kami"] .bl:not(.b-kami){opacity:.12}
+.chipb{font-family:Prompt;font-size:13px;border:1px solid var(--cyan);color:var(--cyan);background:#0a1a3d;border-radius:99px;padding:3px 12px;cursor:pointer;transition:.2s}
+.chipb:hover,.chipb.on{background:var(--cyan);color:var(--navy)}
+.cn{flex:1;text-align:center;padding:8px 6px;border-radius:12px;background:#0a1a3d;border:1px solid #3b6ad677;cursor:pointer;font-family:Prompt;font-size:14px;animation:cpulse 7.5s infinite}
+.cn b{display:block;font-size:22px}
+.cn.sel{border-color:var(--gold);background:#3a2c0a}
+@keyframes cpulse{0%,16%,100%{box-shadow:none}6%,12%{box-shadow:0 0 0 2px var(--cyan),0 0 24px #37d6ffaa;background:#13407a}}
+.carr{color:var(--gold);align-self:center;font-size:20px;padding:0 3px}
+.node{animation:np 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes np{50%{transform:scale(1.25)}}
+/* ===== MOVING MAP THEME ===== */
+#map{position:absolute;inset:0;overflow:hidden;z-index:0;background:radial-gradient(ellipse at 50% 40%,#0b2250,#040c1f 75%)}
+#drift{position:absolute;inset:-60px;opacity:.55;animation:drift 80s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translate(0,0)}to{transform:translate(-14px,-8px)}}
+#mapsvg{position:absolute;left:60px;top:60px;width:2800px;height:1700px;transform-origin:0 0;transition:transform 4s cubic-bezier(.45,.05,.25,1);will-change:transform}
+.rr{transform-box:fill-box;transform-origin:center;animation:rr 10s ease-out infinite}
+@keyframes rr{0%{transform:scale(.55);opacity:.9}100%{transform:scale(1);opacity:0}}
+#map::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,transparent 55%,#02060f99 100%)}
+#hud{position:absolute;left:60px;top:9px;right:130px;display:flex;gap:18px;align-items:center;font:12px/1 Consolas,'Courier New',monospace;color:#7fe9ff;z-index:6;pointer-events:none;letter-spacing:.04em;white-space:nowrap}
+#hud b{color:#ffd986;letter-spacing:.14em}
+#hud .dot{width:8px;height:8px;border-radius:50%;background:#ff5d6c;box-shadow:0 0 8px #ff5d6c;animation:blink 2.4s infinite}
+@keyframes blink{50%{opacity:.2}}
+#arrow{display:inline-block;transition:transform 2.4s cubic-bezier(.55,.05,.2,1);color:#ffd986}
+.bracket{position:absolute;width:26px;height:26px;border:2px solid #e8b94a99;z-index:6;pointer-events:none}
+.bracket.tl{left:10px;top:10px;border-right:0;border-bottom:0}.bracket.tr{right:10px;top:10px;border-left:0;border-bottom:0}
+.bracket.bl{left:10px;bottom:10px;border-right:0;border-top:0}.bracket.br{right:10px;bottom:10px;border-left:0;border-top:0}
+#tracker{position:absolute;left:14px;top:96px;width:36px;height:540px;z-index:6;pointer-events:none}
+#tracker .line{position:absolute;left:17px;top:0;bottom:0;width:2px;background:linear-gradient(#e8b94a88,#37d6ff55)}
+#tracker .wp{position:absolute;left:12px;width:12px;height:12px;border-radius:50%;border:2px solid #37d6ff;background:#07142e;transition:.5s}
+#tracker .wp.pass{background:#e8b94a;border-color:#e8b94a;box-shadow:0 0 10px #e8b94a}
+#tracker .wl{position:absolute;left:24px;font:9px/1 Consolas,monospace;color:#7fa6d8;writing-mode:vertical-rl;transform:translateY(-50%) rotate(180deg);letter-spacing:.08em;display:none}
+#tracker .jet{position:absolute;left:5px;width:26px;transition:top 1s cubic-bezier(.55,.05,.2,1);filter:drop-shadow(0 0 6px #ffd986)}
+.ping{position:absolute;left:50%;top:50%;width:80px;height:80px;margin:-40px 0 0 -40px;border:2px solid #37d6ff;border-radius:50%;z-index:1;pointer-events:none;animation:ping 2.4s ease-out forwards}
+@keyframes ping{from{transform:scale(.2);opacity:.3}to{transform:scale(16);opacity:0}}
+.slide.active::after{display:none}
+body #home,body #navbtn{top:auto;bottom:12px;width:34px;height:34px;padding:0;border-radius:50%;font-size:16px;line-height:32px;text-align:center;opacity:0;transition:opacity .25s;overflow:hidden;white-space:nowrap}
+body #home{left:10px}
+body #navbtn{left:52px}
+body:hover #home,body:hover #navbtn{opacity:.55}
+body #home:hover,body #navbtn:hover{opacity:1}
+#navbtn{position:fixed;left:112px;top:10px;z-index:60;font-family:Prompt;background:#0c2147dd;color:#fff;border:1px solid #3b6ad6;border-radius:99px;padding:6px 14px;cursor:pointer;font-size:14px;opacity:.75}
+#navbtn:hover{opacity:1;background:#12306a;border-color:var(--gold)}
+#nav{position:absolute;inset:0;z-index:50;display:none}
+#nav.open{display:block;animation:pfade .3s ease both}
+#nav .nbg{position:absolute;inset:0;background:rgba(2,6,15,.88)}
+#nav .nbox{position:absolute;left:40px;right:40px;top:30px;bottom:30px;display:flex;flex-direction:column;gap:12px}
+#nav h2{font-family:Prompt;font-weight:600;font-size:28px;color:var(--gold2);display:flex;align-items:center;justify-content:space-between}
+#nav h2 small{font-size:14px;color:var(--cyan);font-weight:400;letter-spacing:.08em}
+#nav .ngrid{display:grid;grid-template-columns:repeat(6,1fr);gap:9px;overflow-y:auto;align-content:start;padding-right:2px}
+#nav .nitem{position:relative;border-radius:12px;border:1px solid #3b6ad655;background:linear-gradient(160deg,#16306aaa,#0c1f47dd);padding:9px 11px 9px 12px;cursor:pointer;min-height:78px;transition:transform .2s,border-color .2s,box-shadow .2s;border-left:4px solid var(--c,#37d6ff)}
+#nav .nitem:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:0 8px 24px #2f7bff55}
+#nav .nitem.cur{border-color:var(--gold);box-shadow:0 0 0 2px var(--gold) inset}
+#nav .nitem b{font-family:Prompt;font-size:12px;color:var(--gold);letter-spacing:.1em}
+#nav .nitem span{display:block;font-size:13.5px;line-height:1.3;color:#e9f0ff;margin-top:2px}
+#nav .nitem i{display:block;font-style:normal;font-family:Prompt;font-size:10.5px;color:#7fa6d8;margin-top:3px}
+#nav .nclose{background:none;border:1px solid #3b6ad6;color:#fff;border-radius:99px;font-family:Prompt;font-size:14px;padding:5px 16px;cursor:pointer}
+@media print{#nav,#navbtn{display:none}}
+.card .pts{counter-reset:pj}
+li.proj{counter-increment:pj;cursor:pointer;display:flex;align-items:flex-start;gap:10px;padding:4px 9px 4px 7px!important;margin:4px 0!important;border-radius:10px;background:rgba(255,255,255,.045);border:1px solid rgba(120,170,255,.14);transition:background .2s,border-color .2s,transform .2s;font-size:14.5px!important;line-height:1.36!important}
+li.proj::before{content:counter(pj)!important;position:static!important;flex:none;width:22px!important;height:22px!important;margin-top:1px!important;border-radius:50%!important;background:linear-gradient(135deg,var(--gold2),var(--gold))!important;box-shadow:none!important;color:var(--navy);font:700 12px/22px Prompt,sans-serif;text-align:center}
+li.proj::after{content:"›";flex:none;margin-left:auto;padding-left:6px;color:var(--cyan);font:600 22px/20px Prompt,sans-serif;opacity:.55;transition:.2s}
+li.proj:hover{background:rgba(232,185,74,.16);border-color:var(--gold);transform:translateX(3px);color:#fff}
+li.proj:hover::after{opacity:1;transform:translateX(3px)}
+.card[data-n]{padding:12px 14px 10px}
+.card[data-n] h3{font-size:18px;padding-right:96px;padding-bottom:6px;margin-bottom:4px;border-bottom:1px solid rgba(232,185,74,.35)}
+.card[data-n]::after{content:attr(data-n) " โครงการ";position:absolute;top:14px;right:14px;font:600 12px/1 Prompt,sans-serif;color:var(--navy);background:linear-gradient(135deg,var(--gold2),var(--gold));border-radius:99px;padding:5px 11px}
+#pdetail{position:absolute;inset:0;z-index:40;display:none}
+#pdetail.open{display:block;animation:pfade .35s ease both}
+@keyframes pfade{from{opacity:0}to{opacity:1}}
+#pdetail .pbg{position:absolute;inset:0;background:rgba(2,6,15,.72)}
+#pdetail .pbox{position:absolute;left:90px;right:90px;top:70px;bottom:70px;border-radius:20px;border:1.5px solid var(--gold);background:linear-gradient(160deg,rgba(14,40,92,.97),rgba(7,20,46,.98));box-shadow:0 30px 90px #000;display:flex;gap:26px;padding:26px 30px;animation:pop .45s cubic-bezier(.2,.9,.2,1) both}
+@keyframes pop{from{transform:scale(.9) translateY(20px)}to{transform:none}}
+#pdetail .pimg{flex:0 0 38%;border-radius:14px;overflow:hidden;border:1px solid #e8b94a77;background:#0a1a3d;display:flex;align-items:center;justify-content:center;font-size:110px}
+#pdetail .pimg img{width:100%;height:100%;object-fit:cover}
+#pdetail .ptxt{flex:1;display:flex;flex-direction:column;gap:10px;overflow:hidden}
+#pdetail h2{font-family:Prompt;font-weight:600;font-size:30px;line-height:1.25;color:var(--gold2)}
+#pdetail .pg{font-family:Prompt;font-size:14px;color:var(--cyan);letter-spacing:.08em}
+#pdetail p{font-size:19px;line-height:1.55;color:#dbe6ff}
+#pdetail .pnote{font-size:13.5px;color:#8fa6cf;border-top:1px solid #3b6ad655;padding-top:8px;margin-top:auto}
+#pdetail .plinks{display:flex;gap:8px;flex-wrap:wrap}
+#pdetail .plinks button,#pdetail .pnav button{font-family:Prompt;font-size:14px;background:#0a1a3d;color:#7fe9ff;border:1px solid #37d6ff;border-radius:99px;padding:5px 14px;cursor:pointer}
+#pdetail .plinks button:hover,#pdetail .pnav button:hover{background:#37d6ff;color:#07142e}
+#pdetail .pnav{display:flex;gap:10px;align-items:center;justify-content:space-between;font-family:Prompt;font-size:14px;color:var(--mute)}
+#pdetail .pclose{position:absolute;right:14px;top:10px;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
+#ui{position:fixed;left:0;right:0;bottom:10px;display:flex;justify-content:center;gap:8px;z-index:50;opacity:0;transition:opacity .3s}
+body:hover #ui{opacity:1}
+#ui button,#home{font-family:Prompt;background:#0c2147dd;color:#fff;border:1px solid #3b6ad6;border-radius:99px;padding:6px 14px;cursor:pointer;font-size:14px}
+#ui button:hover,#home:hover{background:#12306a;border-color:var(--gold)}
+#home{position:fixed;left:12px;top:10px;z-index:60;opacity:.75}
+#home:hover{opacity:1}
+#prog{position:fixed;left:0;top:0;height:4px;background:linear-gradient(90deg,var(--gold),var(--cyan));z-index:60;width:0;transition:width .4s}
+#count{position:fixed;right:14px;top:10px;font-family:Prompt;font-size:14px;color:#9db2d8;z-index:60}
+@media print{
+ @page{size:1280px 720px;margin:0}
+ html,body{overflow:visible;height:auto;background:#fff}
+ #viewport{position:static;display:block}
+ #stage{transform:none!important;width:1280px;height:auto;overflow:visible;box-shadow:none;border-radius:0}
+ .slide{position:relative;opacity:1!important;visibility:visible!important;transform:none!important;height:720px;page-break-after:always;break-after:page;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .fr{opacity:1!important;transform:none!important}.slide::after{display:none}
+ .slide:not(.active) .seg{stroke-dasharray:revert}.slide:not(.active) .unity{clip-path:none}
+ .flip .in{transform:none!important}.flip .b{display:none}
+ #ui,#prog,#count,#home,#map,#hud,#tracker,.bracket,.ping{display:none}
+ .slide{background:linear-gradient(160deg,#07142e,#0c2147)!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+ <linearGradient id="gSil" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset=".45" stop-color="#b5b8bd"/><stop offset=".7" stop-color="#eceef0"/><stop offset="1" stop-color="#a6a9ae"/></linearGradient>
+ <linearGradient id="gSilW" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9ea1a6"/><stop offset=".45" stop-color="#cfd1d4"/><stop offset=".7" stop-color="#f3f4f5"/><stop offset="1" stop-color="#a9acb0"/></linearGradient>
+ <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d49a22"/><stop offset=".5" stop-color="#fbe98a"/><stop offset="1" stop-color="#c88a1c"/></linearGradient>
+ <g id="rtaf-half"><path d="M776 483 L945 125 L975 60 L975 300 Q965 455 776 483Z" fill="url(#gSil)"/><path d="M266 574 L582 574 Q600 598 622 612 Q420 612 266 574Z" fill="url(#gGold)"/><path d="M585 556 Q604 580 640 575 L878 573 Q930 585 952 640 Q972 690 976 720 L976 808 Q936 770 932 735 L922 665 Q908 624 862 614 L640 613 Q602 604 585 556Z" fill="url(#gGold)"/><path d="M392 621 L862 621 Q912 626 920 676 L920 745 Q934 792 976 830 Z" fill="url(#gSilW)"/></g>
+ <g id="rtaf-logo"><use href="#rtaf-half"/><use href="#rtaf-half" transform="translate(1962 0) scale(-1 1)"/><path d="M980 398 Q998 478 1057 494 Q998 510 980 588 Q962 510 902 494 Q962 478 980 398Z" fill="url(#gGold)"/></g>
+</defs></svg>
+<div id="prog"></div><div id="count"></div>
+<button id="home" title="หน้าแรก (Home)" onclick="show(0)">🏠</button>
+<div id="viewport"><div id="stage">
+<div id="map"><div id="drift"><svg id="mapsvg" viewBox="0 0 2800 1700" xmlns="http://www.w3.org/2000/svg"></svg></div></div>
+<div id="hud"><span class="dot"></span><b>MOVING MAP</b><span>RTAF · UNBEATABLE AIR FORCE</span><span id="hwp">WPT 01/33</span><span id="hpos">--</span><span>HDG <i id="hhdg" style="font-style:normal">000</i>° <span id="arrow">▲</span></span><span id="hutc"></span></div>
+<div class="bracket tl"></div><div class="bracket tr"></div><div class="bracket bl"></div><div class="bracket br"></div>
+<div id="tracker"></div>
+
+<!-- 1 COVER -->
+<section class="slide cover" data-sec="">
+ <div class="bg"><img src="img/cover.jpg" alt=""></div>
+ <svg class="rings" viewBox="0 0 1280 720"><g fill="none" stroke="#37d6ff" stroke-opacity=".22"><circle cx="640" cy="360" r="200"/><circle cx="640" cy="360" r="320"/><circle cx="640" cy="360" r="440" stroke-dasharray="4 10"/></g><g stroke="#e8b94a" stroke-opacity=".25"><line x1="0" y1="360" x2="1280" y2="360"/><line x1="640" y1="0" x2="640" y2="720"/></g></svg>
+ <svg class="logo" width="290" height="161" viewBox="250 40 1460 810"><use href="#rtaf-logo"/></svg>
+ <div class="pill" style="margin-top:8px">กองทัพอากาศ · ROYAL THAI AIR FORCE</div>
+ <p style="font-family:Prompt;font-size:30px;margin-top:16px;font-weight:500">เจตนารมณ์ผู้บัญชาการทหารอากาศ พ.ศ.2570 – 2571</p>
+ <h1 style="margin-top:8px">UNBEATABLE</h1>
+ <div class="sub">AIR FORCE</div>
+ <div class="name">พลอากาศเอก เสกสรร คันธา</div>
+ <div class="rank">ผู้บัญชาการทหารอากาศ</div>
+ <div class="quoteb">“จะยอมตายหมายให้เกียรติดำรง จะปิดทองหลังองค์พระปฏิมา”</div>
+</section>
+
+<!-- 2 VISION -->
+<section class="slide" data-sec="ปณิธาน">
+ <div class="hd"><div class="no"></div><div><h2>เจตนารมณ์ผู้บัญชาการทหารอากาศ</h2><small>COMMANDER'S INTENT</small></div></div>
+ <div class="row" style="gap:20px">
+  <div class="col" style="flex:1.25">
+   <div class="card" style="border-color:#e8b94a88;padding:18px 22px"><div class="tag">VISION</div>
+    <p class="quote" style="font-size:26px;line-height:1.3;margin:4px 0 8px">“Strengthening Air Power towards Unbeatable Air Force”</p>
+    <p>กองทัพอากาศมุ่งมั่นที่จะเสริมสร้างกำลังทางอากาศไปสู่กองทัพอากาศที่แข็งแกร่งและมีประสิทธิภาพ โดยพัฒนาตาม <b class="gold">ยุทธศาสตร์ · หลักนิยม · สมุดปกขาว</b> เพื่อป้องกันผลประโยชน์ของชาติทั้งห้วงอากาศและอวกาศ ตลอดจนปกป้องอธิปไตยและประชาชนคนไทย</p></div>
+   <div class="grid g2" style="gap:12px">
+    <div class="card"><h3>ขีดความสามารถที่แท้จริง</h3><p class="small">ไม่ใช่การครอบครองยุทโธปกรณ์ที่เหนือกว่า แต่คือการนำยุทโธปกรณ์และเทคโนโลยีมารวมกัน ใช้ให้มีประสิทธิภาพสูงสุดจนปฏิบัติภารกิจสำเร็จ</p></div>
+    <div class="card"><h3>คนเป็นศูนย์กลาง</h3><p class="small">กำลังพลต้องมีภาวะผู้นำ มีคุณธรรม มีความรู้ความสามารถ มีจิตใจเข้มแข็ง และมีขวัญกำลังใจที่ดี จึงจะเอาชนะศัตรูได้เด็ดขาด</p></div>
+    <div class="card"><h3>ร่วมมือกับมิตร</h3><p class="small">ต้องแสวงหาความร่วมมือและการสนับสนุนจากมิตรประเทศที่มีความจริงใจ เพราะ “ความไว้เนื้อเชื่อใจ” มีความจำเป็นในยามวิกฤต</p></div>
+    <div class="card"><h3>พระราชปณิธาน</h3><p class="small">“ประเทศชาติมั่นคง ประชาชนมีความสุข แก้ไขในสิ่งผิด สืบสานในพระราชปณิธาน ภายใต้ปรัชญาของเศรษฐกิจพอเพียง”</p></div>
+   </div>
+  </div>
+  <div class="ph fr" style="flex:.75;height:470px"><img src="img/hero.jpg" style="object-position:50% 42%"><span class="cap">ภาพ UNBEATABLE AIR FORCE จากเอกสาร</span></div>
+ </div>
+</section>
+
+<!-- 3 ROADMAP -->
+<section class="slide" data-sec="โครงเรื่อง">
+ <div class="hd"><div class="no"></div><div><h2>แผนที่นำทางของเจตนารมณ์</h2><small>HOW THE CONTENT CONNECTS · คลิกกล่องเพื่อข้ามไปหัวข้อ</small></div></div>
+ <p style="margin-bottom:18px">เอกสารเรียงตรรกะเดียวกัน: <b class="gold">เข้าใจสถานการณ์ → กำหนดเป้าหมาย (ENDs) → วางแนวทาง (WAYS) → จัดเครื่องมือ (MEANS) → ลงมือพัฒนา → มอบหมายภารกิจ</b></p>
+ <div class="flow">
+  <div class="step"><b>WHY</b><span>ประเมินสถานการณ์<br>และบทเรียนตะวันออก 2568</span></div>
+  <div class="step"><b>ENDs</b><span>เป้าหมาย<br>Unbeatable Air Force</span></div>
+  <div class="step"><b>WAYS</b><span>แนวทาง<br>ยุทธศาสตร์ · White Paper · ค่านิยม</span></div>
+  <div class="step"><b>MEANS</b><span>เครื่องมือ<br>คน · อาวุธ/เทคโนโลยี · องค์ความรู้</span></div>
+ </div>
+ <div style="text-align:center;color:var(--gold);font-size:26px;margin:6px 0">▼</div>
+ <div class="flow">
+  <div class="step"><b>PROJECTS</b><span>โครงการและงานสำคัญ<br>ปี 69–71 · 6 กลุ่ม</span></div>
+  <div class="step"><b>13 DOMAINS</b><span>ความท้าทายและ<br>การพัฒนาขีดความสามารถ</span></div>
+  <div class="step"><b>ROLES</b><span>การมอบหมายภารกิจ<br>หัวหน้าหน่วย · เสนาธิการ · ผู้ปฏิบัติ</span></div>
+  <div class="step"><b>UNITY</b><span>ข้าราชการ 3 กลุ่ม<br>สมัครสมานสามัคคี</span></div>
+ </div>
+ <div class="card" style="margin-top:20px;text-align:center"><p class="quote" style="font-size:20px">ทุกหัวข้อเชื่อมกลับไปที่เป้าหมายเดียว: ทิศทางเดียวกัน ทุกหน่วย — “Direction is more important than speed”</p></div>
+</section>
+
+<!-- 4 TECH SHIFT + RADAR -->
+<section class="slide" data-sec="WHY · สถานการณ์">
+ <div class="hd"><div class="no"></div><div><h2>สมรภูมิเปลี่ยน: จาก High-end สู่ Low-end</h2><small>การประเมินสถานการณ์สภาวะแวดล้อม · 1) บทเรียนความขัดแย้งทางทหารทั่วโลก</small></div></div>
+ <div class="row" style="gap:16px">
+  <div class="card" style="flex:1.15">
+   <h3>การเปลี่ยนผ่านของเทคโนโลยีสงคราม</h3>
+   <div class="row" style="align-items:center;gap:10px;margin:6px 0 8px">
+    <div style="flex:1;text-align:center;padding:8px;border-radius:12px;background:#0a1a3d"><div class="tag">เดิม</div><b style="font-family:Prompt;font-size:18px">High-end Technology</b><p class="small">มีราคาแพง ซับซ้อน</p></div>
+    <div style="color:var(--gold);font-size:26px">➜</div>
+    <div style="flex:1;text-align:center;padding:8px;border-radius:12px;background:#3a1b1b;border:1px solid var(--red)"><div class="tag" style="color:var(--red)">ปัจจุบัน</div><b style="font-family:Prompt;font-size:18px">Low-end Technology</b><p class="small">ราคาต่ำ ไม่ซับซ้อน ใช้ปริมาณมาก</p></div>
+   </div>
+   <ul class="pts"><li>Small FPV · Swarm · Fiber Optic · Kamikaze Drone สร้างความเสียหายให้ฝ่ายตรงข้ามจากสมรภูมิหลายแห่ง</li><li>การมีโดรนโจมตี (Attack Drone) ระบบ UAS และ <b>C-UAS</b> เป็นองค์ประกอบพื้นฐานของการรักษาอำนาจการรบ</li><li>ปฏิบัติการหลายมิติ (<b>Multi-Domain</b>) ให้ความสำคัญกับ Space และ Cyber Domain มากขึ้น</li><li>AI · Autonomous Swarm Drone · Robotics · Satellite Imagery · Network Sensor · Cyber Technology</li></ul>
+  </div>
+  <div class="ph fr" style="flex:.85;height:268px"><img src="img/uav2.jpg"><span class="cap">ภาพจากเอกสาร: ระบบอากาศยานไร้คนขับภาคสนาม</span></div>
+ </div>
+ <div class="card" style="margin-top:12px;padding:8px 18px;display:flex;gap:18px;align-items:center">
+  <div style="flex:none"><div class="tag">RADAR · คลิกเลือกประเภทภัยคุกคาม</div>
+  <svg class="rd" id="radar" viewBox="0 0 300 150" width="210" height="105">
+   <g fill="none" stroke="#37d6ff" stroke-opacity=".35"><path d="M10 140 A140 140 0 0 1 290 140Z"/><path d="M45 140 A105 105 0 0 1 255 140"/><path d="M80 140 A70 70 0 0 1 220 140"/><path d="M115 140 A35 35 0 0 1 185 140"/><line x1="150" y1="140" x2="150" y2="0"/></g>
+   <g><line x1="150" y1="140" x2="285" y2="140" stroke="#37d6ff" stroke-width="2"/><path d="M150 140 L285 140 A135 135 0 0 0 275 100Z" fill="#37d6ff" opacity=".25"/><animateTransform attributeName="transform" type="rotate" from="180 150 140" to="360 150 140" dur="4s" repeatCount="indefinite"/></g>
+   <circle cx="150" cy="140" r="5" fill="#ffd986"/>
+   <circle class="bl b-fpv" cx="70" cy="95" r="4" fill="#37d6ff"/><circle class="bl b-fpv" cx="215" cy="60" r="4" fill="#37d6ff"/>
+   <circle class="bl b-swarm" cx="120" cy="50" r="3.5" fill="#ffd986"/><circle class="bl b-swarm" cx="132" cy="42" r="3.5" fill="#ffd986"/><circle class="bl b-swarm" cx="110" cy="38" r="3.5" fill="#ffd986"/><circle class="bl b-swarm" cx="140" cy="58" r="3.5" fill="#ffd986"/>
+   <circle class="bl b-fiber" cx="245" cy="105" r="4" fill="#3fd68f"/><circle class="bl b-kami" cx="180" cy="85" r="4.5" fill="#ff5d6c"/><circle class="bl b-kami" cx="40" cy="125" r="4.5" fill="#ff5d6c"/>
+  </svg><p style="font-size:11px;color:#7b90bb">* ภาพประกอบ ไม่ใช่ข้อมูลจริง</p></div>
+  <div style="flex:1"><div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px"><button class="chipb" data-t="fpv">Small FPV</button><button class="chipb" data-t="swarm">Swarm</button><button class="chipb" data-t="fiber">Fiber Optic</button><button class="chipb" data-t="kami">Kamikaze</button><button class="chipb on" data-t="">ทั้งหมด</button></div>
+  <p id="thr" class="small" style="min-height:50px">คลิกประเภทโดรนเพื่อดูลักษณะภัยคุกคาม — ทุกชนิดต้องมี <b class="gold">มาตรการ C-UAS เชื่อมกับระบบบัญชาการและควบคุม</b></p></div>
+ </div>
+</section>
+
+<!-- 5 GEOPOLITICS -->
+<section class="slide" data-sec="WHY · สถานการณ์">
+ <div class="hd"><div class="no"></div><div><h2>ความเสี่ยงภูมิรัฐศาสตร์ และภัยใกล้ตัวไทย</h2><small>การประเมินสถานการณ์สภาวะแวดล้อม · ภูมิภาคและชายแดน</small></div></div>
+ <div class="row" style="gap:16px">
+  <div class="col" style="flex:1.2">
+   <div class="card"><h3>ความขัดแย้งทางภูมิรัฐศาสตร์ทั่วโลก</h3><ul class="pts"><li>กรณีรัสเซีย-ยูเครน ผลักให้กลุ่ม NATO เร่งเพิ่มงบประมาณด้านการป้องกันประเทศ</li><li>ความต้องการเกินกำลังผลิตยุทโธปกรณ์ → มูลค่ายุทโธปกรณ์สูงขึ้นอย่างมีนัยสำคัญ</li><li>การส่งกำลังบำรุงของทหารทั่วโลกขาดความต่อเนื่อง</li></ul></div>
+   <div class="card"><h3>จุดเปราะบางเชิงยุทธศาสตร์ (Strategic Choke Points)</h3>
+    <svg viewBox="0 0 560 70" width="100%"><line x1="30" y1="35" x2="530" y2="35" stroke="#e8b94a" stroke-opacity=".5" stroke-dasharray="5 6"/>
+     <g font-family="Prompt" font-size="13" fill="#e9f0ff" text-anchor="middle"><circle class="node" cx="80" cy="35" r="10" fill="#ff5d6c"/><text x="80" y="65">ช่องแคบฮอร์มุซ</text><circle class="node" cx="280" cy="35" r="10" fill="#ffd84a" style="animation-delay:.6s"/><text x="280" y="65">ช่องแคบมะละกา</text><circle class="node" cx="480" cy="35" r="10" fill="#37d6ff" style="animation-delay:1.2s"/><text x="480" y="65">ช่องแคบไต้หวัน</text></g></svg>
+    <p class="small">เป็นปัจจัยเสี่ยงที่อาจซ้ำเติมวิกฤตพลังงานและการหยุดชะงักของห่วงโซ่อุปทานอุตสาหกรรมป้องกันประเทศ (Defence Supply Chain Disruption) ทั่วโลก ทำให้แต่ละรัฐต้องทนทานขีดความสามารถในการพึ่งพาตนเองภายใต้ทรัพยากรที่มีอยู่อย่างจำกัด</p></div>
+  </div>
+  <div class="col" style="flex:1">
+   <div class="card" style="border-color:#e8b94a88"><h3>ภัยต่อประเทศไทย</h3><ul class="pts"><li>ไม่จำกัดเพียงกำลังทางอากาศแบบดั้งเดิม แต่ครอบคลุม <b>ขีปนาวุธ โดรน และ EMSO</b></li><li>การปะทะไทย-กัมพูชา 2 ครั้ง ทำให้ตระหนักว่าฝ่ายตรงข้ามมีทั้ง <b>Kinetic และ Non-Kinetic</b></li><li>คู่ขนานทั้งสงครามไซเบอร์ สงครามเศรษฐกิจ และสงครามข้อมูลข่าวสาร</li></ul></div>
+   <div class="ph fr" style="height:200px"><img src="img/post.jpg" style="object-position:50% 50%"><span class="cap">ภาพจากเอกสาร (ส่วนการยุทธการ)</span></div>
+  </div>
+ </div>
+ <div class="card" style="margin-top:12px;padding:10px 18px"><p class="small"><b class="gold">ชายแดนด้านตะวันตก:</b> ยังตรวจพบแนวโน้มการบินล้ำแดนจากการใช้อาวุธต่อพื้นที่เป้าหมายบริเวณชายแดนภายในประเทศเมียนมา กองทัพอากาศยังต้องเฝ้าระวังและปกป้องห้วงอากาศ · ความรุนแรงใน 3 จังหวัดชายแดนภาคใต้ไม่อาจยุติในเวลาอันใกล้ และมีการก่อเหตุต่อเนื่อง จึงต้องวางแผนปฏิบัติการรอบด้านและรัดกุม</p></div>
+</section>
+
+<!-- 6 IMPACTS FLIP -->
+<section class="slide" data-sec="WHY · ผลกระทบ">
+ <div class="hd"><div class="no"></div><div><h2>ผลกระทบเชิงยุทธศาสตร์ 6 ประการ</h2><small>2) ผลกระทบทางยุทธศาสตร์และการเตรียมความพร้อมในการรับมือ · คลิกการ์ดเพื่อพลิกดูแนวทางรับมือ</small></div></div>
+ <div class="grid g3" style="gap:14px" id="impacts"></div>
+</section>
+
+<!-- 7 LESSONS 1 -->
+<section class="slide" data-sec="WHY · บทเรียน">
+ <div class="hd"><div class="no"></div><div><h2>บทเรียนตะวันออก 2568 (1): การรบหลายมิติ</h2><small>3) บทเรียนจากการใช้กำลังในการป้องกันประเทศด้านตะวันออก</small></div></div>
+ <div class="row" style="gap:16px">
+  <div class="col" style="flex:1.3">
+   <div class="card"><h3>1 · จากสงครามชนิดเดียว สู่ Multi-Domain Operations</h3><p class="small">การใช้กำลัง 2 ครั้งที่ผ่านมาสะท้อนว่าการปฏิบัติการเปลี่ยนไปสู่หลายมิติ ครอบคลุมทั้งทางบก ทะเล อากาศ อวกาศ ไซเบอร์ และคลื่นแม่เหล็กไฟฟ้า โดยชัยชนะไม่ได้ขึ้นอยู่กับอาวุธเพียงอย่างเดียว แต่ขึ้นอยู่กับ <b>การข่าวกรอง การเชื่อมโยงข้อมูล ระบบอาวุธ และขีดความสามารถของทุกมิติในการทำงานร่วมกันอย่างเป็นระบบ</b></p></div>
+   <div class="card"><h3>2 · ครองอากาศและอวกาศ</h3><p class="quote" style="font-size:16px">“If you can't hold the high ground (Air) and the higher ground (Space), you'll lose the war, and you'll lose very quickly”</p><p class="small" style="margin-top:4px">GPS และความสามารถต่อต้านการรบกวนสัญญาณ (Anti-Jamming) มีผลโดยตรงต่อความอยู่รอดและประสิทธิภาพของกำลังรบ จึงต้องครอบคลุมการป้องกัน การรักษาความต่อเนื่อง และมีทางเลือกสำรองเมื่อระบบถูกรบกวน</p></div>
+   <div class="card"><h3>3 · ภัยคุกคามจากโดรน (FPV / Fiber Optic)</h3><p class="small">ขนาดเล็ก ตรวจจับยาก ต้นทุนต่ำ เปลี่ยนลักษณะของภัยคุกคามในพื้นที่ ส่งผลต่อทั้งกำลังพล ระบบบัญชาการและควบคุม และโครงสร้างพื้นฐาน จึงต้องบูรณาการ <b>ตรวจจับ พิสูจน์ทราบ แจ้งเตือน ป้องกัน และตอบสนอง</b> ทุกระดับ รวมถึง C-UAS</p></div>
+  </div>
+  <div class="col" style="flex:.8">
+   <div class="ph fr" style="height:250px"><img src="img/uav1.jpg"><span class="cap">ภาพจากเอกสาร (ส่วนการวิจัยและพัฒนา)</span></div>
+   <div class="card" style="border-color:#e8b94a88"><div class="tag">สรุปบทเรียน</div><p class="small">บทเรียนที่สำคัญที่สุดคือ กำลังทางอากาศเป็น Cutting Edge ที่สนับสนุนกองกำลังภาคพื้นให้สร้างความได้เปรียบและยึดคืนพื้นที่อธิปไตย · การครองความได้เปรียบทางอากาศเป็นปัจจัยพื้นฐานของความสำเร็จ และการปฏิบัติการมิติอวกาศแยกออกจากการปฏิบัติการทางอากาศไม่ได้อีกต่อไป</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- 8 LESSONS 2 -->
+<section class="slide" data-sec="WHY · บทเรียน">
+ <div class="hd"><div class="no"></div><div><h2>บทเรียนตะวันออก 2568 (2): เครือข่ายและการปฏิบัติการร่วม</h2><small>NCO · JCC · “DIRECTION IS MORE IMPORTANT THAN SPEED”</small></div></div>
+ <div class="row" style="gap:16px">
+  <div class="col" style="flex:1.1">
+   <div class="card" style="padding:12px 16px"><div class="tag">NETWORK CENTRIC OPERATIONS (NCO)</div>
+    <svg viewBox="0 0 440 110" width="100%"><g stroke="#37d6ff" stroke-opacity=".4" fill="none"><path d="M50 20 L220 55 L390 20"/><path d="M50 55 L220 55 L390 55"/><path d="M50 90 L220 55 L390 90"/></g>
+     <g fill="#173a7d" stroke="#37d6ff"><circle cx="50" cy="20" r="11"/><circle cx="50" cy="55" r="11"/><circle cx="50" cy="90" r="11"/><circle cx="390" cy="20" r="11"/><circle cx="390" cy="55" r="11"/><circle cx="390" cy="90" r="11"/></g>
+     <circle cx="220" cy="55" r="24" fill="#3a2c0a" stroke="#e8b94a" stroke-width="2"/>
+     <g font-family="Prompt" font-size="12" text-anchor="middle"><text x="220" y="59" fill="#ffd986" font-weight="700">C2 · JCC</text><text x="50" y="108" fill="#9db2d8">Sensors</text><text x="390" y="108" fill="#9db2d8">Shooters</text></g>
+     <g fill="#ffd986"><circle r="3.5"><animateMotion dur="2.4s" repeatCount="indefinite" path="M50 20 L220 55 L390 20"/></circle><circle r="3.5"><animateMotion dur="2.4s" begin=".8s" repeatCount="indefinite" path="M50 55 L220 55 L390 55"/></circle><circle r="3.5"><animateMotion dur="2.4s" begin="1.6s" repeatCount="indefinite" path="M50 90 L220 55 L390 90"/></circle></g></svg>
+    <p class="small">เป็นหัวใจสำคัญของการทวีกำลังของกองทัพไทย: เชื่อมโยงข้อมูลจาก Sensor ต่าง ๆ เข้าสู่การประมวลผล การตัดสินใจ และการสั่งการได้ทันเวลา จึงไม่ใช่เพียง Tactical Data Link แต่คือการเปลี่ยนไปสู่การเชื่อมต่อขีดความสามารถเพื่อสร้าง <b>Shared Situational Awareness · Shared Understanding · Joint Desired Effects</b></p></div>
+   <div class="card"><h3>กองทัพไทยเป็นหนึ่งเดียว: JCC</h3><p class="small">จากการแยกกันตามเหล่าทัพ ไปสู่การปฏิบัติการร่วมภายใต้ Joint Capabilities Command: Joint ISR · Joint IAMD · Joint UAS &amp; C-UAS · Joint Cyber · Joint EMSO</p></div>
+  </div>
+  <div class="col" style="flex:.9">
+   <div class="card"><h3>“คน” คือปัจจัยสำคัญที่สุด</h3><ul class="pts"><li>รู้ความสามารถของเหล่าทัพตนเองและเหล่าทัพอื่น</li><li>พัฒนา SOP และ TTP ที่สอดคล้องกัน ลดความซับซ้อนและความสับสน</li><li>Joint Education · Joint Training · Joint Combined Exercise ควบคู่กับพัฒนายุทโธปกรณ์</li></ul></div>
+   <div class="card" style="text-align:center;border-color:#e8b94a"><p class="quote" style="font-size:22px">“Direction is more important than speed”</p><p class="small">สิ่งสำคัญไม่ใช่การเดินให้เร็วที่สุด แต่คือการทำให้ทุกส่วนของกองทัพเดินไปในทิศทางเดียวกัน</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- 9 KEY MESSAGES -->
+<section class="slide" data-sec="เจตนารมณ์">
+ <div class="hd"><div class="no"></div><div><h2>สาระสำคัญจากสารผู้บัญชาการทหารอากาศ</h2><small>KEY MESSAGES · และ 4 กุญแจแห่งชัยชนะ</small></div></div>
+ <div class="row" style="gap:18px">
+  <div class="col" style="flex:1.3;gap:9px">
+   <div class="card" style="padding:8px 14px"><div class="chip"><span class="num">1</span><p class="small"><b>พัฒนาตามยุทธศาสตร์ หลักนิยม และสมุดปกขาว</b> เพื่อป้องกันผลประโยชน์ของชาติทั้งห้วงอากาศและอวกาศ ปกป้องอธิปไตยและประชาชน</p></div></div>
+   <div class="card" style="padding:8px 14px"><div class="chip"><span class="num">2</span><p class="small"><b>ภัยคุกคามยังคงอยู่</b> เจตนารมณ์ทางการเมืองของประเทศที่ไม่เป็นมิตรยังเป็นปฏิปักษ์ ยั่วยุด้วยปฏิบัติการข้อมูลข่าวสาร ไซเบอร์ กลุ่มโดรน (Swarm Drones) ทดสอบขีดความสามารถของฝ่ายเรา และเสริมสร้างกำลังรบอย่างต่อเนื่อง</p></div></div>
+   <div class="card" style="padding:8px 14px"><div class="chip"><span class="num">3</span><p class="small"><b>กำลังทางอากาศที่จะชนะในสงครามครั้งต่อไป</b> ต้องมีขีดความสามารถด้านไซเบอร์ อวกาศ คลื่นแม่เหล็กไฟฟ้า และยุทโธปกรณ์ที่ใช้เทคโนโลยีสมัยใหม่ บนเครือข่ายเชื่อมโยงข้อมูลที่แข็งแกร่งกับทุกเหล่าทัพ</p></div></div>
+   <div class="card" style="padding:8px 14px"><div class="chip"><span class="num">4</span><p class="small"><b>ขีดความสามารถที่แท้จริง</b> ไม่ใช่การครอบครองยุทโธปกรณ์เหนือกว่า แต่คือการนำยุทโธปกรณ์และเทคโนโลยีไปใช้ได้อย่างมีประสิทธิภาพ</p></div></div>
+   <div class="card" style="padding:8px 14px"><div class="chip"><span class="num">5</span><p class="small"><b>จิตใจเข้มแข็ง ขวัญกำลังใจดี</b> และต้องแสวงหาความร่วมมือและการสนับสนุนจากมิตรประเทศที่มีความจริงใจ เพราะ “ความไว้เนื้อเชื่อใจ” มีความจำเป็นในยามวิกฤต</p></div></div>
+   <div class="card" style="padding:8px 14px;border-color:#e8b94a"><div class="chip"><span class="num">6</span><p class="small"><b class="gold">เหนือสิ่งอื่นใด</b> คือสถาบันพระมหากษัตริย์ สถาบันเดียวของราชอาณาจักรไทยที่บูรพมหากษัตริยาธิราชเจ้าทรงสร้าง กอบกู้ ฟื้นฟู รักษาชาติและเกียรติภูมิ</p></div></div>
+  </div>
+  <div class="col" style="flex:.85">
+   <div class="tag" style="text-align:center">เพื่อให้เหนือกว่าในการตัดสินตกลงใจและการปฏิบัติการร่วม</div>
+   <div class="grid g2" style="gap:10px;flex:1">
+    <div class="card" style="text-align:center;padding:12px 8px"><div style="font-size:30px">🛰️</div><h3>เทคโนโลยี</h3><p class="small">ไซเบอร์ คลื่นแม่เหล็กไฟฟ้า ยุทโธปกรณ์สมัยใหม่</p></div>
+    <div class="card" style="text-align:center;padding:12px 8px"><div style="font-size:30px">🕸️</div><h3>เครือข่าย</h3><p class="small">เชื่อมโยงข้อมูลที่แข็งแกร่งทุกมิติ</p></div>
+    <div class="card" style="text-align:center;padding:12px 8px"><div style="font-size:30px">🤝</div><h3>ปฏิบัติการร่วม</h3><p class="small">เหล่าทัพ มิตรประเทศ เป็นหนึ่งเดียว</p></div>
+    <div class="card" style="text-align:center;padding:12px 8px"><div style="font-size:30px">🎖️</div><h3>กำลังคน</h3><p class="small">ผู้นำ คุณธรรม ความรู้ จิตใจเข้มแข็ง</p></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 10 ENDS -->
+<section class="slide" data-sec="ENDs">
+ <div class="hd"><div class="no"></div><div><h2>ENDs · เป้าหมาย</h2><small>“UNBEATABLE AIR FORCE”</small></div></div>
+ <div class="row" style="gap:20px">
+  <div class="col" style="flex:1.25">
+   <div class="card" style="border-color:#e8b94a88;padding:18px 22px"><p style="font-size:20px">กองทัพอากาศที่ <b class="gold">แข็งแกร่งและมีประสิทธิภาพ</b> พร้อมปฏิบัติภารกิจในทุกมิติ สามารถปกป้องอธิปไตยและรักษาผลประโยชน์ของชาติ</p></div>
+   <div class="grid g2" style="gap:12px">
+    <div class="card"><div style="font-size:28px">🛡️</div><h3>ปกป้อง</h3><p class="small">ปกป้องอธิปไตยและรักษาผลประโยชน์ของชาติ พร้อมปฏิบัติภารกิจในทุกมิติ</p></div>
+    <div class="card"><div style="font-size:28px">🔗</div><h3>เชื่อมโยง</h3><p class="small">เชื่อมโยงขีดความสามารถในการปฏิบัติการร่วมที่ใช้เครือข่ายเป็นศูนย์กลางอย่างเป็นระบบ</p></div>
+    <div class="card"><div style="font-size:28px">🤝</div><h3>ช่วยเหลือและร่วมมือ</h3><p class="small">ช่วยเหลือประชาชนในยามวิกฤต และแสวงความร่วมมือกับมิตรประเทศที่มีความจริงใจ</p></div>
+    <div class="card" style="border-color:#e8b94a"><div style="font-size:28px">🇹🇭</div><h3>เพื่อธำรง</h3><p class="small">ความมั่นคงของชาติและความปลอดภัยของประชาชนคนไทย</p></div>
+   </div>
+  </div>
+  <div class="ph fr" style="flex:.75;height:440px"><img src="img/hero.jpg" style="object-position:50% 38%"><span class="cap">ภาพ UNBEATABLE AIR FORCE จากเอกสาร</span></div>
+ </div>
+</section>
+
+<!-- 11 WAYS -->
+<section class="slide" data-sec="WAYS">
+ <div class="hd"><div class="no"></div><div><h2>WAYS · แนวทาง</h2><small>“DIRECTION IS MORE IMPORTANT THAN SPEED”</small></div></div>
+ <p style="margin-bottom:14px">การพัฒนาขีดความสามารถต้องมี <b class="gold">ทิศทางและเป้าหมายที่ชัดเจน</b> — สิ่งสำคัญไม่ใช่ความรวดเร็ว แต่คือการรวมพลังความพยายามและทรัพยากรของทุกหน่วย พัฒนาไปในทิศทางและเป้าหมายเดียวกัน ผ่านเสาหลัก 3 ต้น</p>
+ <div class="grid g3" style="gap:16px;align-items:stretch">
+  <div class="card" style="border-top:4px solid var(--cyan)"><div class="tag">เสาที่ 1</div><h3>RTAF STRATEGY 20 ปี</h3><p class="small gold" style="margin-bottom:6px">ฉบับปรับปรุง พ.ศ.2568</p><p><b class="cy">Network-Centric Air Force and Joint Force</b></p><ul class="pts" style="margin-top:6px"><li>“What we believe to be the most effective and practical approach to mission success”</li><li>ยึดมั่นพัฒนาขีดความสามารถตามยุทธศาสตร์ โดยเน้นปฏิบัติการที่ใช้เครือข่ายเป็นศูนย์กลาง</li><li>เชื่อมโยงบูรณาการขีดความสามารถปฏิบัติการร่วมกับเหล่าทัพ สู่การป้องกันและรักษาผลประโยชน์ของชาติ</li></ul></div>
+  <div class="card" style="border-top:4px solid var(--gold)"><div class="tag">เสาที่ 2</div><h3>RTAF WHITE PAPER</h3><p class="small gold" style="margin-bottom:6px">สมุดปกขาว ทอ. ระหว่างปี 70–71</p><p><b class="gold">“What we are going to acquire — 33 Projects”</b></p><ul class="pts" style="margin-top:6px"><li>Red (Procurement) 11 โครงการ</li><li>Green (Defence Industries Co-operation) 16 โครงการ</li><li>Yellow (RTAF-Led R&amp;D) 6 โครงการ</li></ul></div>
+  <div class="card" style="border-top:4px solid var(--green)"><div class="tag">เสาที่ 3</div><h3>Professionalism &amp; Patriotism</h3><p class="small" style="color:#7cf0b8;margin-bottom:6px">“Strength and efficiency mean the pursuit of professionalism and patriotism”</p><ul class="pts"><li>ความเข้มแข็งและประสิทธิภาพเกิดจากความเป็น <b>มืออาชีพ</b> และอุดมการณ์ <b>ความรักชาติ</b></li><li>ถ่ายทอดผ่านค่านิยม 5 ข้อ (สไลด์ที่ 13)</li></ul></div>
+ </div>
+</section>
+
+<!-- 12 WHITE PAPER -->
+<section class="slide" data-sec="WAYS · สมุดปกขาว">
+ <div class="hd"><div class="no"></div><div><h2>สมุดปกขาว ทอ. ปี 70–71</h2><small>“WHAT WE ARE GOING TO ACQUIRE” · 33 PROJECTS</small></div></div>
+ <div class="row" style="gap:30px;align-items:center">
+  <div style="flex:.9;text-align:center">
+   <svg class="donut" id="donut" viewBox="0 0 240 240" width="330">
+    <g transform="rotate(-90 120 120)" fill="none" stroke-width="34">
+     <circle class="seg sr" cx="120" cy="120" r="82" stroke="#ff5d6c" stroke-dasharray="171.7 343.4"/>
+     <circle class="seg sg" cx="120" cy="120" r="82" stroke="#3fd68f" stroke-dasharray="249.9 515.2" stroke-dashoffset="-175"/>
+     <circle class="seg sy" cx="120" cy="120" r="82" stroke="#ffd84a" stroke-dasharray="93.7 515.2" stroke-dashoffset="-422"/>
+    </g>
+    <text data-count="33" x="120" y="118" text-anchor="middle" font-family="Prompt" font-weight="700" font-size="44" fill="#fff">33</text>
+    <text x="120" y="142" text-anchor="middle" font-family="Prompt" font-size="15" fill="#9db2d8">โครงการ</text>
+   </svg>
+   <p class="small" style="color:var(--mute)">เอาเมาส์ชี้การ์ดเพื่อเน้นส่วนของกราฟ</p>
+  </div>
+  <div class="col" style="flex:1.5;gap:12px">
+   <div class="card" data-seg="r" style="border-left:6px solid var(--red)"><div class="row" style="justify-content:space-between;align-items:center"><h3 style="color:#ff9aa4">Red · Procurement</h3><span class="big" style="font-size:34px">11 <small style="font-size:17px">(33.33%)</small></span></div><p class="small">โครงการจัดหายุทโธปกรณ์</p></div>
+   <div class="card" data-seg="g" style="border-left:6px solid var(--green)"><div class="row" style="justify-content:space-between;align-items:center"><h3 style="color:#7cf0b8">Green · Defence Industries Co-operation</h3><span class="big" style="font-size:34px">16 <small style="font-size:17px">(48.48%)</small></span></div><p class="small">ความร่วมมือกับอุตสาหกรรมป้องกันประเทศ — สัดส่วนสูงสุดของสมุดปกขาว</p></div>
+   <div class="card" data-seg="y" style="border-left:6px solid var(--yellow)"><div class="row" style="justify-content:space-between;align-items:center"><h3 style="color:#ffe98a">Yellow · RTAF-Led R&amp;D</h3><span class="big" style="font-size:34px">6 <small style="font-size:17px">(18.18%)</small></span></div><p class="small">วิจัยและพัฒนาที่กองทัพอากาศเป็นผู้นำ</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- 13 VALUES -->
+<section class="slide" data-sec="WAYS · ค่านิยม">
+ <div class="hd"><div class="no"></div><div><h2>Professionalism &amp; Patriotism: 5 ค่านิยม</h2><small>“STRENGTH AND EFFICIENCY MEAN THE PURSUIT OF PROFESSIONALISM AND PATRIOTISM”</small></div></div>
+ <div style="display:flex;justify-content:center;margin-bottom:6px"><div style="padding:10px 34px;border-radius:99px;background:linear-gradient(135deg,#173a7d,#0c2250);border:2px solid var(--gold);font-family:Prompt;font-weight:600;font-size:22px"><span class="gold">มืออาชีพ</span> + รักชาติ = ความเข้มแข็งและประสิทธิภาพ</div></div>
+ <div style="text-align:center;color:var(--gold);font-size:20px;line-height:1;margin-bottom:8px">▼ ▼ ▼ ▼ ▼</div>
+ <div class="row" style="gap:10px;align-items:stretch">
+  <div class="card" style="flex:1;padding:12px"><div class="num" style="margin-bottom:6px">1</div><h3 style="font-size:17px">Pride of the Nation and Pride of the Air Force &amp; Patriotism</h3><p style="font-size:14px">มีอุดมการณ์รักในสถาบันชาติ ศาสนา และพระมหากษัตริย์ · ภูมิใจในรากเหง้า เกียรติภูมิความเป็นไทย และ “ความเป็นทหารอากาศไทย”</p></div>
+  <div class="card" style="flex:1;padding:12px"><div class="num" style="margin-bottom:6px">2</div><h3 style="font-size:17px">Cutting Edge Technologies in Order to Defend the Country and Save Her People</h3><p style="font-size:14px">มีเทคโนโลยีที่ทันสมัย เพื่อป้องปราม ป้องกันประเทศ และช่วยเหลือประชาชน</p></div>
+  <div class="card" style="flex:1;padding:12px"><div class="num" style="margin-bottom:6px">3</div><h3 style="font-size:17px">Professionalism</h3><p style="font-size:14px">ความเป็นมืออาชีพในการปฏิบัติงาน</p></div>
+  <div class="card" style="flex:1;padding:12px"><div class="num" style="margin-bottom:6px">4</div><h3 style="font-size:17px">Transparency &amp; Accountability</h3><p style="font-size:14px">ความโปร่งใสและการตรวจสอบได้</p></div>
+  <div class="card" style="flex:1;padding:12px;border-color:#e8b94a"><div class="num" style="margin-bottom:6px">5</div><h3 style="font-size:17px">Next Generation Air and Space Personnel</h3><p style="font-size:14px">สร้างทหารอากาศและอวกาศ (ชาย-หญิง) ในยุคต่อไป → ต่อยอดสู่ MEANS ข้อ 1</p></div>
+ </div>
+ <div class="row" style="margin-top:14px;gap:14px">
+  <div class="ph fr" style="flex:1;height:170px"><img src="img/salute.jpg" style="object-position:50% 35%"><span class="cap">ภาพจากเอกสาร (ส่วนจิตวิญญาณความเป็นทหาร)</span></div>
+  <div class="ph fr" style="flex:1;height:170px"><img src="img/commander.jpg" style="object-position:50% 30%"><span class="cap">ภาพจากเอกสาร (ส่วนโครงสร้างพื้นฐานและองค์ความรู้)</span></div>
+ </div>
+</section>
+
+<!-- 14 MEANS -->
+<section class="slide" data-sec="MEANS">
+ <div class="hd"><div class="no"></div><div><h2>MEANS · เครื่องมือหรือทรัพยากร</h2><small>3 ทรัพยากรหลักที่ขับเคลื่อนกองทัพ</small></div></div>
+ <div class="grid g3" style="gap:14px;align-items:stretch">
+  <div class="card" style="border-top:4px solid var(--gold)"><div style="font-size:30px">👥</div><h3>1 · Next Generation Airmen &amp; Women</h3><p class="small gold" style="margin-bottom:4px">ทรัพยากรมนุษย์ — “หัวใจขององค์กร หรือ Heart of the Air Force”</p>
+   <ul class="pts"><li style="font-size:14.5px">ทหารอากาศที่ดี มีภาวะผู้นำ วินัย อุดมการณ์ คุณธรรม เสียสละ <b>Air Force Before Self</b></li><li style="font-size:14.5px">รู้เท่าทันเทคโนโลยีสมัยใหม่ และประยุกต์ใช้ในภารกิจได้</li><li style="font-size:14.5px">สร้างและพัฒนาฝ่ายเสนาธิการที่เก่งกาจ · ทีมหัวกะทิ “RTAF Best of the Best”</li><li style="font-size:14.5px">ผู้ทุ่มเททำงานเบื้องหน้า-เบื้องหลัง ไม่ร้องขอ ไม่วิ่งเต้น ต้องได้รับการดูแล ต้องไม่ถูกลืม</li></ul></div>
+  <div class="card" style="border-top:4px solid var(--cyan)"><div style="font-size:30px">✈️</div><h3>2 · โครงสร้างพื้นฐาน ยุทโธปกรณ์ และเทคโนโลยี</h3>
+   <ul class="pts"><li style="font-size:14.5px">โครงสร้างพื้นฐานได้มาตรฐานสากล/Military Spec ปรับปรุงระบบเก่า เคลื่อนย้ายและซ่อมบำรุงง่าย</li><li style="font-size:14.5px"><b>“คุณภาพเหนือปริมาณ”</b> มีขีดความสามารถ <b>“ป้องปราม”</b> แม่นยำสูง ระยะไกลและนอกระยะสายตา มีปริมาณเหมาะสมเพียงพอ</li><li style="font-size:14.5px">นำเทคโนโลยีใหม่มาประยุกต์: Space · Cyber · AI · Autonomous · Information Domains</li><li style="font-size:14.5px">เน้นวิจัยพัฒนาในสิ่งที่ “กองทัพอากาศมีความเชี่ยวชาญ” ผลิตและต่อยอดเอง ร่วมกับเอกชน/อุตสาหกรรมป้องกันประเทศ</li></ul></div>
+  <div class="card" style="border-top:4px solid var(--green)"><div style="font-size:30px">📚</div><h3>3 · องค์ความรู้ แนวความคิด ยุทธศาสตร์ ยุทธวิธี หลักนิยม ค่านิยม และวัฒนธรรมองค์กร</h3><p class="small" style="color:#7cf0b8;margin-bottom:4px">ทรัพยากรที่สำคัญมากแต่มองไม่เห็น</p>
+   <ul class="pts"><li style="font-size:14.5px">หน่วยขึ้นตรงกองทัพอากาศสั่งสม บันทึก และต่อยอดองค์ความรู้ที่สร้างไว้</li><li style="font-size:14.5px">ทบทวน ปรับปรุง พัฒนาแนวความคิดและยุทธวิธีการใช้กำลังกับอาวุธยุทโธปกรณ์ให้เหมาะกับภัยคุกคาม</li><li style="font-size:14.5px">ปลูกสร้างวัฒนธรรมองค์กรและค่านิยมที่ดี · แก้ไขที่ไม่ดี</li></ul></div>
+ </div>
+ <div class="row" style="margin-top:14px;gap:14px">
+  <div class="ph fr" style="flex:1;height:150px"><img src="img/diplomacy.jpg" style="object-position:50% 30%"><span class="cap">ภาพจากเอกสาร: การแลกเปลี่ยนของที่ระลึกกับผู้แทนกองทัพต่างประเทศ</span></div>
+  <div class="ph fr" style="flex:1;height:150px"><img src="img/uav1.jpg" style="object-position:50% 50%"><span class="cap">ภาพจากเอกสาร (ส่วนการวิจัยและพัฒนา)</span></div>
+  <div class="ph fr" style="flex:1;height:150px"><img src="img/medic.jpg" style="object-position:50% 40%"><span class="cap">ภาพจากเอกสาร (ส่วนทรัพยากรบุคคล)</span></div>
+ </div>
+</section>
+
+<!-- 15 NETWORK PARTNERS -->
+<section class="slide" data-sec="MEANS · กำลังพล">
+ <div class="hd"><div class="no"></div><div><h2>MEANS 1: กำลังพลกับภาคีเครือข่าย</h2><small>ส่งเสริมและสนับสนุนบุคลากรไปปฏิบัติหน้าที่ในหน่วยงานภาคีเครือข่าย (1.6 – 1.7)</small></div></div>
+ <div class="row" style="gap:16px">
+  <div class="col" style="flex:1.2">
+   <div class="card"><h3>1.6 หน่วยงานที่เป็นภาคีเครือข่ายของกองทัพอากาศ</h3><p class="small">เพื่อประสานงานระหว่างฝ่ายความมั่นคงและฝ่ายพลเรือน</p><div class="grid g3" style="gap:8px;margin-top:6px"><div class="org">สำนักงานการบินพลเรือนแห่งประเทศไทย</div><div class="org">บริษัท วิทยุการบินแห่งประเทศไทย</div><div class="org">บริษัท ท่าอากาศยานไทย (มหาชน)</div><div class="org">กรมท่าอากาศยาน</div><div class="org">คณะกรรมการกิจการกระจายเสียง กิจการโทรทัศน์ และกิจการโทรคมนาคมแห่งชาติ</div></div></div>
+   <div class="card"><h3>1.7 องค์กรที่สนับสนุนอุตสาหกรรมป้องกันประเทศ</h3><p class="small">ส่งเสริมบทบาทของกำลังพล ในองค์กรภาครัฐและเอกชน</p><div class="grid g3" style="gap:8px;margin-top:6px"><div class="org">กระทรวงศึกษาธิการ</div><div class="org">กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม</div><div class="org">สำนักงานพัฒนาเทคโนโลยีอวกาศและภูมิสารสนเทศ (องค์การมหาชน)</div><div class="org">สถาบันวิจัยดาราศาสตร์แห่งชาติ (องค์การมหาชน)</div><div class="org">บริษัทเอกชนที่มีขีดความสามารถ</div></div></div>
+   <div class="card" style="border-color:#e8b94a88"><p class="small"><b class="gold">หลักคิด:</b> คนคือหัวใจ — สร้างทีมหัวกะทิ สร้างนวัตกรรม งานวิจัยและพัฒนา และดูแลคนที่ทุ่มเททำงานโดยไม่ร้องขอ</p></div>
+  </div>
+  <div class="col" style="flex:.8">
+   <div class="ph fr" style="height:200px"><img src="img/diplomacy.jpg" style="object-position:50% 30%"><span class="cap">ภาพจากเอกสาร: การแลกเปลี่ยนของที่ระลึกกับผู้แทนกองทัพต่างประเทศ</span></div>
+   <div class="ph fr" style="height:200px"><img src="img/cansat.jpg" style="object-position:50% 40%"><span class="cap">นักเรียนนายเรืออากาศ ทีม “SPACE CADET” — CanSat Competition 2026</span></div>
+  </div>
+ </div>
+</section>
+
+<!-- 16 FLAGSHIP A -->
+<section class="slide" data-sec="โครงการและงานสำคัญ">
+ <div class="hd"><div class="no"></div><div><h2>โครงการและงานสำคัญ ปี 69–71 (1)</h2><small>กลุ่มที่ 1–3 · กำลังรบ ควบคุม และตรวจจับ</small></div></div>
+ <div class="row" style="gap:12px;margin-bottom:12px">
+  <div class="card" style="flex:1;padding:8px 16px;display:flex;align-items:center;gap:14px"><span class="big" data-count="26" style="font-size:42px">26</span><span class="small">โครงการและงานสำคัญ<br>ที่ระบุในเอกสาร</span></div>
+  <div class="card" style="flex:1;padding:8px 16px;display:flex;align-items:center;gap:14px"><span class="big" data-count="6" style="font-size:42px">6</span><span class="small">กลุ่มงาน<br>ครอบคลุมทุกมิติ</span></div>
+  <div class="card" style="flex:1;padding:8px 16px;display:flex;align-items:center;gap:14px"><span class="big" style="font-size:42px">69–71</span><span class="small">กรอบเวลา<br>ปี พ.ศ.</span></div>
+ </div>
+ <div class="grid g3" style="gap:12px">
+  <div class="card" style="border-top:4px solid var(--red)"><h3>กลุ่ม 1 · ปฏิบัติการทางอากาศ</h3><ul class="pts"><li>จัดหาเครื่องบินขับไล่โจมตีทดแทน ระยะที่ 1 และ 2</li><li>จัดหาระบบอากาศยานไร้คนขับติดอาวุธเชิงยุทธศาสตร์ (Strategic UCAV) ระยะที่ 1</li><li>จัดหาอุปกรณ์กระเปาะชี้เป้า (Targeting Pod) ระยะที่ 2</li><li>จัดหา Precision Guided Munition</li><li>จัดหา Supersonic Stand-off Weapon</li><li>จัดหา Long Range Precision Weapon</li></ul></div>
+  <div class="card" style="border-top:4px solid var(--cyan)"><h3>กลุ่ม 2 · บัญชาการควบคุมและป้องกันทางอากาศ</h3><ul class="pts"><li>พัฒนาและปรับปรุงระบบป้องกันทางอากาศ (D2C2)</li><li>พัฒนาขีดความสามารถการควบคุมและแจ้งเตือนในอากาศ</li><li>พัฒนาการป้องกันฐานที่ตั้งทางทหารของกองทัพอากาศ (IADS) ระยะที่ 1 และ 2</li></ul></div>
+  <div class="card" style="border-top:4px solid var(--green)"><h3>กลุ่ม 3 · ระบบตรวจจับ</h3><ul class="pts"><li>พัฒนาขีดความสามารถ ISR แบบ Real Time โดยประยุกต์ใช้ปัญญาประดิษฐ์ (AI-assisted)</li><li>พัฒนาและปรับปรุงระบบป้องกันทางอากาศ ระยะที่ 11</li><li>พัฒนาและปรับปรุงระบบป้องกันทางอากาศ ระยะที่ 12</li><li>พัฒนาการปฏิบัติการในห้วงอวกาศ (Satellite)</li></ul></div>
+ </div>
+</section>
+
+<!-- 17 FLAGSHIP B -->
+<section class="slide" data-sec="โครงการและงานสำคัญ">
+ <div class="hd"><div class="no"></div><div><h2>โครงการและงานสำคัญ ปี 69–71 (2)</h2><small>กลุ่มที่ 4–6 · ลำเลียง ดำรงความพร้อม และความภาคภูมิใจในสถาบัน</small></div></div>
+ <div class="row" style="gap:14px">
+  <div class="col" style="flex:1.5">
+   <div class="grid g2" style="gap:12px">
+    <div class="card" style="border-top:4px solid var(--gold)"><h3>กลุ่ม 4 · การลำเลียงทางอากาศ</h3><ul class="pts"><li>จัดหาเครื่องบินลำเลียงทางยุทธวิธีอเนกประสงค์ ระยะที่ 1</li><li>จัดหาเครื่องบินรับ-ส่งบุคคลสำคัญทดแทนเครื่องบินลำเลียงแบบที่ 19 (Dual-use Airbus A330 MRTT+)</li><li>จัดหาเฮลิคอปเตอร์ขนาดกลางรับ-ส่งบุคคลสำคัญ</li><li>จัดหาเฮลิคอปเตอร์รับ-ส่งบุคคลสำคัญ</li></ul></div>
+    <div class="card" style="border-top:4px solid var(--blue)"><h3>กลุ่ม 5 · ดำรงความพร้อมและวิจัยพัฒนา</h3><ul class="pts"><li>พัฒนาขีดความสามารถส่งกำลังบำรุงเครื่องบินขับไล่อเนกประสงค์ บ.ข.20/ก (Gripen 39 C/D) ระยะที่ 2</li><li>จัดหาเครื่องช่วยฝึกทางยุทธวิธี (Tactical Simulator Center)</li><li>วิจัยและพัฒนาระบบอากาศยานไร้คนขับติดอาวุธระดับยุทธวิธี</li></ul></div>
+   </div>
+   <div class="card" style="border-top:4px solid var(--gold);border-color:#e8b94a88"><h3>กลุ่ม 6 · ส่งเสริมความรักความภาคภูมิใจในสถาบันหลักของชาติ ช่วยเหลือประชาชน และเสริมสร้างขวัญกำลังใจ</h3><div class="grid g2" style="gap:4px 18px"><ul class="pts"><li>ดัดแปลงเครื่องบินปฏิบัติภารกิจฝนหลวงและควบคุมไฟป่า (BT-67)</li><li>สร้างบ้านพักอาศัยข้าราชการ</li><li>สร้างพระสถูปเจดีย์บรรจุพระบรมสารีริกธาตุ</li></ul><ul class="pts"><li>พัฒนาพื้นที่สันทนาการสำหรับข้าราชการและครอบครัว</li><li>ปรับปรุงพิพิธภัณฑ์และสถานที่สำคัญทางประวัติศาสตร์ของกองทัพอากาศ</li><li>พัฒนาโรงพยาบาลทศมินทราธิราชเพื่อดูแลสุขภาพแก่ข้าราชการ ครอบครัว และประชาชนในพื้นที่กรุงเทพมหานครตอนเหนือ</li></ul></div></div>
+  </div>
+  <div class="ph fr" style="flex:.7;height:440px"><img src="img/stupa.jpg" style="object-position:50% 50%"><span class="cap">โครงการสร้างพระสถูปเจดีย์บรรจุพระบรมสารีริกธาตุ บริเวณพื้นที่พระมหาธาตุนภเมทนีดล นภพลภูมิสิริ จังหวัดเชียงใหม่</span></div>
+ </div>
+</section>
+
+<!-- 18 DOMAINS OVERVIEW -->
+<section class="slide" data-sec="13 ด้าน">
+ <div class="hd"><div class="no"></div><div><h2>ความท้าทายและการพัฒนาขีดความสามารถ 13 ด้าน</h2><small>CHALLENGES · WHAT ARE WE GOING TO DO</small></div></div>
+ <p class="small" style="margin-bottom:10px">จัดเป็น 4 หมวด ตามบทบาทในการสร้าง “Unbeatable Air Force” (เลขหน้าตามลำดับหัวข้อในเอกสาร)</p>
+ <div class="grid g4" style="gap:12px;align-items:stretch">
+  <div class="card" style="border-top:4px solid var(--red)"><div class="tag" style="color:#ff9aa4">⚔️ หมวดการรบ</div><ul class="pts" style="margin-top:6px"><li>ด้านที่ 5 การยุทธการ</li><li>ด้านที่ 6 การบัญชาการและควบคุม (C2)</li><li>ด้านที่ 7 การปฏิบัติการทางอวกาศ</li><li>ด้านที่ 3 การข่าว</li></ul></div>
+  <div class="card" style="border-top:4px solid var(--cyan)"><div class="tag">💻 หมวดเทคโนโลยีและสนับสนุน</div><ul class="pts" style="margin-top:6px"><li>ด้านที่ 9 เทคโนโลยีดิจิทัล และ EMSO</li><li>ด้านที่ 11 การวิจัยและพัฒนา</li><li>ด้านที่ 8 การส่งกำลังและซ่อมบำรุง</li><li>ด้านที่ 12 การงบประมาณ</li></ul></div>
+  <div class="card" style="border-top:4px solid var(--green)"><div class="tag" style="color:#7cf0b8">👥 หมวดกำลังพล</div><ul class="pts" style="margin-top:6px"><li>ด้านที่ 2 การบริหารกำลังพล</li><li>ด้านที่ 13 การปรับปรุงคุณภาพชีวิต</li><li>ด้านที่ 1 การส่งเสริมจิตวิญญาณความเป็นทหาร</li></ul></div>
+  <div class="card" style="border-top:4px solid var(--gold)"><div class="tag">🌐 หมวดภายนอก</div><ul class="pts" style="margin-top:6px"><li>ด้านที่ 4 ความสัมพันธ์ระหว่างประเทศ</li><li>ด้านที่ 10 กิจการพลเรือนและการสื่อสารทางยุทธศาสตร์</li></ul></div>
+ </div>
+ <div class="row" style="margin-top:16px;gap:14px">
+  <div class="ph fr" style="flex:1;height:210px"><img src="img/post.jpg"><span class="cap">ภาพจากเอกสาร</span></div>
+  <div class="ph fr" style="flex:1;height:210px"><img src="img/uav2.jpg"><span class="cap">ภาพจากเอกสาร</span></div>
+  <div class="ph fr" style="flex:1;height:210px"><img src="img/salute.jpg" style="object-position:50% 35%"><span class="cap">ภาพจากเอกสาร</span></div>
+  <div class="ph fr" style="flex:1;height:210px"><img src="img/flood2.jpg"><span class="cap">ภาพจากเอกสาร</span></div>
+ </div>
+</section>
+
+<!-- 19 OPS -->
+<section class="slide" data-sec="ด้านที่ 5 · การยุทธการ">
+ <div class="hd"><div class="no"></div><div><h2>ด้านที่ 5 การยุทธการ</h2><small>OPERATIONS · พร้อมรบ ฝึกร่วม ต่อต้านโดรน</small></div></div>
+ <div class="row" style="gap:14px">
+  <div class="col" style="flex:1.45">
+   <div class="grid g2" style="gap:10px">
+    <div class="card" style="padding:10px 14px"><h3 style="font-size:17px">5.1 ทบทวนหลักนิยมและยุทธศาสตร์</h3><p class="small" style="font-size:14px!important">ทบทวนและปรับปรุงหลักนิยม ยุทธศาสตร์ สมุดปกขาว แผนการทัพ และโครงสร้างกำลังรบ นำบทเรียนตะวันออก 2568 มาประยุกต์</p></div>
+    <div class="card" style="padding:10px 14px"><h3 style="font-size:17px">5.2 บูรณาการขีดความสามารถ</h3><p class="small" style="font-size:14px!important">ให้ยุทโธปกรณ์ทั้งปัจจุบันและอนาคตเชื่อมโยงทำงานร่วมกันเป็นระบบ (Total Integration) ภายใต้มาตรฐานทางทหาร</p></div>
+    <div class="card" style="padding:10px 14px"><h3 style="font-size:17px">5.3 ยกระดับการฝึก</h3><p class="small" style="font-size:14px!important">สนับสนุนการฝึกร่วมกองทัพไทย เน้นเครือข่ายเป็นศูนย์กลาง การเชื่อมโยงข้อมูล C2 และบูรณาการขีดความสามารถของแต่ละเหล่าทัพ</p></div>
+    <div class="card" style="padding:10px 14px"><h3 style="font-size:17px">5.4 ดำรงความพร้อมรบ</h3><p class="small" style="font-size:14px!important">กำลังพล ยุทโธปกรณ์ ระบบบัญชาการและควบคุม ทบทวนแผนยุทธการและเอกสารที่เกี่ยวข้อง เติมเต็มและเสริมสร้างยุทโธปกรณ์สำรองสงครามอย่างต่อเนื่อง</p></div>
+   </div>
+   <div class="card" style="border-color:#e8b94a88;padding:10px 14px"><h3 style="font-size:17px">5.5 ศูนย์บริหารจัดการ ควบคุม และต่อต้านอากาศยานซึ่งไม่มีนักบินแห่งชาติ</h3><p class="small" style="font-size:14px!important">ปรับปรุงแผนป้องกันภัยคุกคามจากโดรนให้ครอบคลุมหน่วย ณ ที่ตั้ง: <b class="gold">ดอนเมือง · กองบิน · โรงเรียนการบิน · ศูนย์ฝึกน้ำพอง · กองกำลังทางอากาศเฉพาะกิจที่ 9</b></p></div>
+   <div class="grid g2" style="gap:10px"><div class="card" style="padding:10px 14px"><h3 style="font-size:17px">5.6 ศูนย์การสงครามทางอากาศ</h3><p class="small" style="font-size:14px!important">ศูนย์รวมองค์ความรู้ด้านยุทธวิธีการรบทางอากาศที่มีมาตรฐาน พร้อมพัฒนาเครื่องช่วยฝึกบินจำลองทางยุทธวิธี</p></div>
+    <div class="card" style="padding:10px 14px"><h3 style="font-size:17px">5.7 อัตราอาวุธสำรองสงคราม</h3><p class="small" style="font-size:14px!important">เร่งทบทวนและปรับปรุงให้สอดคล้องกับสภาพแวดล้อมด้านความมั่นคงและบทเรียนจากการใช้กำลัง</p></div></div>
+  </div>
+  <div class="ph fr" style="flex:.7;height:440px"><img src="img/post.jpg" style="object-position:40% 50%"><span class="cap">ภาพจากเอกสาร (ส่วนการยุทธการ ข้อ 5.3)</span></div>
+ </div>
+</section>
+
+<!-- 20 C2 -->
+<section class="slide" data-sec="ด้านที่ 6 · C2">
+ <div class="hd"><div class="no"></div><div><h2>ด้านที่ 6 การบัญชาการและควบคุม (C2)</h2><small>COMMAND AND CONTROL · “ONE TEAM ทัพไทย”</small></div></div>
+ <div class="grid g3" style="gap:12px">
+  <div class="card"><h3>6.1 รองรับ JCC</h3><p class="small">วางแผนเตรียมส่วน C2 รองรับ Joint Capabilities Command ตามแนวทาง “One Team ทัพไทย”</p></div>
+  <div class="card"><h3>6.2 ศูนย์ปฏิบัติการ ทอ.</h3><p class="small">ยกระดับขีดความสามารถ ทบทวนการปฏิบัติงาน ให้ทำงานประสานสอดคล้อง (Seamless Synchronization) ลดการทำงานแบบ Silo</p></div>
+  <div class="card"><h3>6.3 Data-Driven Operations</h3><p class="small">ศูนย์ยุทธการทางอากาศเป็นศูนย์กลางอำนวยการยุทธ์ ใช้ AI-assisted เพิ่มความรวดเร็วและแม่นยำ รองรับ Joint MDO</p></div>
+  <div class="card"><h3>6.4 ACCS + Link-T</h3><p class="small">ขยายขีดความสามารถและเชื่อมโยงข้อมูลยุทธวิธี ครอบคลุมกำลังหลัก ต่อต้านการโจมตีไซเบอร์และรบกวนอิเล็กทรอนิกส์ (Cyber &amp; EW Resilience)</p></div>
+  <div class="card"><h3>6.5 แจ้งเตือนภัยล่วงหน้า</h3><p class="small">ปรับปรุงสถานีรายงาน ครอบคลุมพื้นที่ เคลื่อนย้ายคล่องตัว (Mobility) ตรวจจับและติดตาม UAS/Drone และขีปนาวุธวิถีโค้ง (Ballistic Missile)</p></div>
+  <div class="card" style="border-color:#e8b94a"><h3>6.6 AI-assisted C2 · HITL</h3><p class="small">ศูนย์ซอฟต์แวร์พัฒนา AI-assisted Air Operations/C2 โดยผู้บังคับบัญชา <b class="gold">เป็นผู้ควบคุมและตัดสินตกลงใจขั้นสุดท้าย (Human in the Loop)</b></p></div>
+ </div>
+ <div class="card" style="margin-top:12px;padding:10px 16px">
+  <div class="tag" style="margin-bottom:6px">วงจรเดียวกัน — ข้อมูลไหลจากอวกาศสู่การตัดสินใจและปฏิบัติการ (คลิกแต่ละขั้น)</div>
+  <div style="display:flex;align-items:stretch">
+   <div class="cn" style="animation-delay:0s" data-d="อวกาศ: SSA · Space ISR (EO/IR/SAR, SIGINT) · PNT/SATCOM เป็นแหล่งภาพและข้อมูลต้นน้ำ"><b>🛰️</b>อวกาศ / ISR</div><span class="carr">➜</span>
+   <div class="cn" style="animation-delay:1.5s" data-d="การข่าว: ข่าวกรองยุทธศาสตร์ ยุทธวิธี เฝ้าตรวจลาดตระเวน โดย AI-assisted ภายใต้ผู้เชี่ยวชาญ (HITL)"><b>🔎</b>การข่าว</div><span class="carr">➜</span>
+   <div class="cn" style="animation-delay:3s" data-d="C2: ศูนย์ปฏิบัติการ ทอ. · ACCS · Link-T เชื่อมข้อมูลทุกหน่วย รองรับ JCC"><b>🕸️</b>C2</div><span class="carr">➜</span>
+   <div class="cn" style="animation-delay:4.5s" data-d="ตัดสินใจ: ผู้บังคับบัญชาควบคุมและตัดสินตกลงใจขั้นสุดท้าย (Human in the Loop)"><b>🧠</b>ตัดสินใจ (คน)</div><span class="carr">➜</span>
+   <div class="cn" style="animation-delay:6s" data-d="ยุทธการ: ปฏิบัติการร่วมหลายมิติ ทำงานร่วมกันเป็นระบบ ชี้เป้าด้วยการสนับสนุนจากอวกาศ"><b>🎯</b>ยุทธการ</div>
+  </div>
+  <p id="chaintxt" class="small" style="margin-top:6px;min-height:22px;color:var(--gold2)">คลิกที่ขั้นตอนเพื่อดูบทบาท</p>
+ </div>
+</section>
+
+<!-- 21 SPACE -->
+<section class="slide" data-sec="ด้านที่ 7 · อวกาศ">
+ <div class="hd"><div class="no"></div><div><h2>ด้านที่ 7 การปฏิบัติการทางอวกาศ</h2><small>SPACE OPERATIONS</small></div></div>
+ <div class="row" style="gap:16px">
+  <div class="col" style="flex:1.45">
+   <div class="grid g2" style="gap:12px">
+    <div class="card" style="border-top:4px solid var(--cyan)"><div style="font-size:26px">🤝</div><h3>7.1 ความร่วมมือ</h3><p class="small">เสริมสร้างความร่วมมือกับองค์กรระดับนานาชาติ หน่วยงานภาครัฐ และภาคเอกชนที่เกี่ยวข้องกับอุตสาหกรรมป้องกันประเทศ เพื่อเพิ่มขีดความสามารถการปฏิบัติการทางอวกาศ</p></div>
+    <div class="card" style="border-top:4px solid var(--blue)"><div style="font-size:26px">📡</div><h3>7.2 SSA และ Space ISR</h3><p class="small">เฝ้าระวังอวกาศ ด้วยกล้องโทรทรรศน์ ดาวเทียมถ่ายภาพ EO/IR/SAR และ Space-based SIGINT สนับสนุนการข่าวกรองและวิเคราะห์ข้อมูลภูมิสารสนเทศ ใช้ AI-assisted</p></div>
+    <div class="card" style="border-top:4px solid var(--green)"><div style="font-size:26px">🧭</div><h3>7.4 นำทางและสื่อสารทางอวกาศ</h3><p class="small">ประยุกต์ระบบดาวเทียมนำทางและกำหนดตำแหน่ง/เวลา (PNT) รวมถึงดาวเทียมสื่อสารสนับสนุนระบบบัญชาการและควบคุม</p></div>
+    <div class="card" style="border-top:4px solid var(--gold)"><div style="font-size:26px">🎯</div><h3>7.5 Space Assisted Precision</h3><p class="small">บูรณาการข้อมูลดาวเทียมเพื่อเพิ่มความแม่นยำการปฏิบัติการทางทหาร (Space Targeting) ด้วย RNSS, SATCOM และ ISR ทันสมัย ทนต่อการรบกวน</p></div>
+   </div>
+   <div class="card" style="padding:8px 14px"><p class="small"><b class="gold">7.3</b> ส่งเสริมให้นักเรียนนายเรืออากาศเข้าร่วมการแข่งขันปฏิบัติการอวกาศ ทั้งระดับชาติและนานาชาติ</p></div>
+  </div>
+  <div class="ph fr" style="flex:.8;height:430px"><img src="img/cansat.jpg" style="object-position:40% 50%"><span class="cap">นักเรียนนายเรืออากาศ ทีม “SPACE CADET” สร้างประวัติศาสตร์คว้าอันดับ 6 จากผู้เข้าร่วม 82 ทีม ในการแข่งขันดาวเทียมจำลองขนาดเล็ก CanSat Competition 2026 (4–7 มิ.ย. 2569 รัฐเวอร์จิเนีย สหรัฐอเมริกา)</span></div>
+ </div>
+</section>
+
+<!-- 22 INTEL -->
+<section class="slide" data-sec="ด้านที่ 3 · การข่าว">
+ <div class="hd"><div class="no"></div><div><h2>ด้านที่ 3 การข่าว</h2><small>INTELLIGENCE · AI-ASSISTED · HUMAN IN THE LOOP</small></div></div>
+ <div class="row" style="gap:14px">
+  <div class="col" style="flex:1.5">
+   <div class="card"><h3>3.1 การข่าวกรองยุทธศาสตร์ ยุทธวิธี และเฝ้าตรวจลาดตระเวน</h3><p class="small">เน้นให้กองทัพอากาศหยั่งรู้และรู้เท่าทันสถานการณ์เหนือกว่าฝ่ายตรงข้าม โดยประยุกต์ใช้ปัญญาประดิษฐ์ (AI-assisted) ภายใต้การกำกับตรวจสอบของผู้เชี่ยวชาญตามหลัก <b class="gold">Human in the Loop (HITL)</b> เป็นฐานการประเมินสถานการณ์ สนับสนุนการตัดสินใจ และการวางแผนของฝ่ายเสนาธิการอย่างถูกต้อง รวดเร็ว ทันต่อสถานการณ์</p></div>
+   <div class="card"><h3>3.2 ต่อต้านการข่าวกรอง</h3><p class="small">ดำเนินการต่อต้านการข่าวกรองและการข่าวกรองเพื่อความมั่นคง รวมทั้งจัดทำประมาณการต่อต้านการข่าวกรอง การข่าวกรองภัยคุกคามด้านความมั่นคง การสืบสวนเพื่อรักษาความปลอดภัย และรักษาความปลอดภัยบุคคลสำคัญ เพื่อให้ที่ตั้งหน่วยของกองทัพอากาศปลอดภัย รวมทั้งบุคคลสำคัญได้รับความปลอดภัยจากการกระทำที่ไม่ประสงค์ดีของฝ่ายตรงข้าม</p></div>
+   <div class="card"><h3>3.3 มาตรการรักษาความปลอดภัยอย่างเคร่งครัด และ Integrated Smart Security System</h3><p class="small">เริ่มพัฒนาระบบให้ครอบคลุมที่ตั้งหน่วยทั้งหมด โดยเพิ่มขีดความสามารถในการวิเคราะห์ ประเมินสถานการณ์ และคาดการณ์แนวโน้มภัยคุกคามด้วย AI-assisted นำไปสู่การแจ้งเตือนภัยล่วงหน้าและการตอบสนองต่อภัยทุกรูปแบบ</p></div>
+  </div>
+  <div class="col" style="flex:.9">
+   <div class="ph fr" style="height:230px"><img src="img/post.jpg"><span class="cap">ภาพจากเอกสาร (ส่วนการยุทธการ)</span></div>
+   <div class="card" style="border-color:#e8b94a88"><p class="small"><b class="gold">เชื่อมโยง:</b> ข้อมูลข่าวกรอง → ศูนย์ปฏิบัติการ/C2 (ด้านที่ 6) → การตัดสินใจของผู้บังคับบัญชา</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- 23 ICT -->
+<section class="slide" data-sec="ด้านที่ 9 · ดิจิทัล/EMSO">
+ <div class="hd"><div class="no"></div><div><h2>ด้านที่ 9 เทคโนโลยีดิจิทัลและ EMSO</h2><small>DIGITAL TECHNOLOGY AND ELECTROMAGNETIC SPECTRUM OPERATIONS</small></div></div>
+ <div class="grid g3" style="gap:14px">
+  <div class="card"><div style="font-size:30px">💻</div><h3>9.1 ขีดความสามารถด้านดิจิทัล</h3><p class="small">เสริมขีดความสามารถ โดยเฉพาะการประยุกต์ใช้ Artificial Intelligence (AI) การบูรณาการข้อมูลที่มีคุณภาพ (Data-driven) Autonomous, Cloud Computing และเทคโนโลยีไซเบอร์ เพื่อให้พร้อมรับมือและตอบโต้ภัยคุกคามทางไซเบอร์ได้ทันสถานการณ์</p></div>
+  <div class="card"><div style="font-size:30px">📶</div><h3>9.2 EMSO</h3><p class="small">ยกระดับขีดความสามารถการปฏิบัติการคลื่นแม่เหล็กไฟฟ้า (Electromagnetic Spectrum Operations) เพื่อสนับสนุนภารกิจของกองทัพอากาศและการปฏิบัติการร่วม โดยริเริ่มปรับโครงสร้างหน่วย กำหนดภารกิจ วางแผนระบบงาน และกำหนดทิศทางและแผนการพัฒนาอย่างเป็นระบบ</p></div>
+  <div class="card"><div style="font-size:30px">🤖</div><h3>9.3 บูรณาการ AI</h3><p class="small">บูรณาการการจัดการเทคโนโลยีปัญญาประดิษฐ์ของทุกหน่วยในกองทัพอากาศ เพื่อใช้ AI สนับสนุนการปฏิบัติงาน โดยต้องไม่เกิดความซ้ำซ้อนต่างหน่วยต่างจัดหา ซึ่งจะทำให้เกิดความคุ้มค่า</p></div>
+ </div>
+ <div class="row" style="margin-top:16px;gap:14px;align-items:center">
+  <div class="card" style="flex:1;text-align:center"><div class="tag">เชื่อมโยง</div><p class="small">ดิจิทัล/AI → ข่าวกรอง (ด้านที่ 3) → C2 (ด้านที่ 6) → ยุทธการ (ด้านที่ 5)<br>EMSO และ Cyber Resilience → ปกป้องการเชื่อมโยง Link-T/ACCS</p></div>
+ </div>
+</section>
+
+<!-- 24 R&D -->
+<section class="slide" data-sec="ด้านที่ 11 · วิจัยพัฒนา">
+ <div class="hd"><div class="no"></div><div><h2>ด้านที่ 11 การวิจัยและพัฒนา</h2><small>RESEARCH &amp; DEVELOPMENT · จาก TRL 4 สู่สายการผลิต</small></div></div>
+ <div class="row" style="gap:14px">
+  <div class="col" style="flex:1.3">
+   <div class="card"><h3>11.3 รวบรวมและคัดเลือกผลงานวิจัยที่พร้อมระดับ TRL 4–8</h3>
+    <div class="trl" style="margin:8px 0"><i style="height:35%">4</i><i style="height:48%;animation-delay:.12s">5</i><i style="height:61%;animation-delay:.24s">6</i><i style="height:74%;animation-delay:.36s">7</i><i style="height:87%;animation-delay:.48s">8</i><i class="t9" style="height:100%;animation-delay:.6s">9</i></div>
+    <p class="small">ที่ตอบสนองภัยคุกคามทั้งปัจจุบันและอนาคต และยืนยันความจำเป็นแล้ว โดยวิจัยต่อเนื่องสู่ระดับ <b class="gold">TRL 9</b> และพัฒนาไปสู่ต้นแบบสายการผลิต เพื่อขยายผลร่วมกับอุตสาหกรรมป้องกันประเทศ</p></div>
+   <div class="card"><h3>11.1 ปรับโครงสร้างอำนาจหน้าที่</h3><p class="small">ปรับโครงสร้างหน่วยงานด้านวิจัยและพัฒนาทั้งระบบ ให้ดำเนินการวิจัยได้ทันการเปลี่ยนแปลงของสภาพแวดล้อมด้านความมั่นคงและเทคโนโลยี รวมทั้งเสริมสร้างระบบนิเวศด้านการวิจัยและพัฒนา</p></div>
+   <div class="card"><h3>11.2 หน่วยผู้ใช้งานและหน่วยวิจัย</h3><p class="small">บูรณาการความร่วมมือกำหนดโจทย์การวิจัยตอบสนองความต้องการทางยุทธการ และเสริมสร้างความร่วมมือเชิงยุทธศาสตร์กับหน่วยงานภาครัฐ สถาบันวิจัย สถาบันการศึกษา และภาคอุตสาหกรรมป้องกันประเทศ</p></div>
+  </div>
+  <div class="col" style="flex:.8">
+   <div class="ph fr" style="height:215px"><img src="img/uav1.jpg"><span class="cap">ภาพจากเอกสาร (ส่วนการวิจัยและพัฒนา)</span></div>
+   <div class="ph fr" style="height:215px"><img src="img/uav2.jpg"><span class="cap">ภาพจากเอกสาร (ส่วนการวิจัยและพัฒนา)</span></div>
+  </div>
+ </div>
+</section>
+
+<!-- 25 LOGISTICS + BUDGET -->
+<section class="slide" data-sec="ด้านที่ 8 · 12">
+ <div class="hd"><div class="no"></div><div><h2>ด้านที่ 8 ส่งกำลังและซ่อมบำรุง · ด้านที่ 12 งบประมาณ</h2><small>LOGISTICS · BUDGET — รากฐานของความพร้อมรบ</small></div></div>
+ <div class="grid g2" style="gap:14px">
+  <div class="card" style="border-top:4px solid var(--cyan)"><h3>🔧 ด้านที่ 8 การส่งกำลังและซ่อมบำรุง</h3><ul class="pts"><li><b>8.1</b> ปรับแนวทางและรูปแบบการส่งกำลังและซ่อมบำรุงของทุกคลังใหญ่ ให้สอดคล้องกับสถานการณ์ ซึ่งปัจจุบันความต้องการยุทโธปกรณ์เกินกำลังการผลิตของบริษัทผู้ผลิต ส่งผลให้ค่าใช้จ่ายในการส่งกำลังและซ่อมบำรุงสูงขึ้นอย่างมีนัยสำคัญ จึงต้องวางแผนการสะสมอะไหล่ การส่งกำลัง และการดำรงขีดความสามารถการซ่อมบำรุงภายใต้ข้อจำกัดด้านงบประมาณ</li><li><b>8.2</b> ตรวจสอบและประเมินโครงสร้างพื้นฐานและสิ่งอำนวยความสะดวกที่ทรุดโทรมหรือล้าสมัย ปรับปรุงให้ได้มาตรฐานสากลหรือ Military Spec</li><li><b>8.3</b> ส่งเสริม รักษา และอนุรักษ์กิจการด้านสิ่งแวดล้อมและพลังงานทดแทน — ใช้ทรัพยากรอย่างคุ้มค่า หน่วยขึ้นตรงต้องใช้ทรัพยากรอย่างคุ้มค่า ลดการใช้กระดาษ (Less Paper) งดขวดพลาสติก/หลอดพลาสติก และเปิด/ปิดไฟฟ้าตามมาตรการด้านพลังงาน</li></ul></div>
+  <div class="card" style="border-top:4px solid var(--gold)"><h3>💰 ด้านที่ 12 การงบประมาณ</h3><ul class="pts"><li><b>12.1</b> ตรวจสอบ กลั่นกรอง และปรับลดการใช้งบประมาณที่ไร้ประสิทธิภาพ ปรับรูปแบบและแนวทางการบริหารงบฯ ให้มีประสิทธิภาพ สามารถก่อหนี้ผูกพันและเบิกจ่ายได้ตามเป้าหมาย โปร่งใส เกิดประโยชน์สูงสุด</li><li><b>12.2</b> เตรียมความพร้อมการจัดทำคำของบโครงการสำคัญ (Flagship Projects) โดยเฉพาะ <b>โครงการจัดหาเครื่องบินขับไล่ทดแทน ระยะที่ 2</b> โครงการสำคัญตามสมุดปกขาว และโครงการสำคัญรองรับบทเรียนการป้องกันประเทศ</li><li><b>12.3</b> เสริมสร้างกำลังฝ่ายเสนาธิการให้มีความรู้ความเข้าใจในการบริหารงบประมาณแผ่นดินให้เกิดประสิทธิภาพสูงสุด ตั้งแต่การจัดทำคำของบประมาณ การชี้แจงป้องกันงบประมาณ การพิจารณาจัดสรรงบประมาณ และการติดตามประเมินผล โดยจัดการเรียนการสอนในโรงเรียนเสนาธิการทหารอากาศและวิทยาลัยการทัพอากาศ</li></ul></div>
+ </div>
+ <div class="card" style="margin-top:12px;text-align:center;border-color:#e8b94a88;padding:10px"><p class="quote" style="font-size:19px">งบประมาณมีประสิทธิภาพ → Flagship สำเร็จ → กำลังรบพร้อมต่อเนื่อง</p></div>
+</section>
+
+<!-- 26 HR -->
+<section class="slide" data-sec="ด้านที่ 2 · กำลังพล">
+ <div class="hd"><div class="no"></div><div><h2>ด้านที่ 2 การบริหารกำลังพล</h2><small>PERSONNEL MANAGEMENT · คนดี คนเก่ง ต้องไม่ถูกลืม</small></div></div>
+ <div class="row" style="gap:14px">
+  <div class="col" style="flex:1.5">
+   <div class="card"><h3>2.1 · 2.4 ใช้คนให้ถูกกับงาน</h3><p class="small">ส่งเสริมให้ข้าราชการที่เป็นคนดี มีความรู้ความสามารถ และเป็นคนทำงาน ได้รับการยกย่องเชิดชู และมอบหมายให้ปฏิบัติงานในตำแหน่งสำคัญตามความรู้ความชำนาญ เพื่อเป็นตัวอย่างแก่ผู้อื่น · มุ่งเน้นการใช้ประโยชน์จากกำลังพลที่มีความรู้สูง ส่งเสริม <b>High Performance PME Students</b> และหมุนเวียนคนดี คนเก่ง ไปเป็น Role Model</p></div>
+   <div class="card"><h3>2.2 เส้นทางก้าวหน้าในอาชีพ (Career Path)</h3><p class="small">ปรับระบบให้เหมาะสม โดยเฉพาะบุคลากรที่มีความรู้ด้าน <b>ไซเบอร์ ซอฟต์แวร์ อวกาศ</b> รวมถึงด้านเทคโนโลยีและนวัตกรรม เพื่อสร้างประโยชน์สูงสุดแก่กองทัพอากาศ</p></div>
+   <div class="card"><h3>2.3 กำลังพลหญิง</h3><p class="small">เปิดโอกาสปฏิบัติหน้าที่ในตำแหน่งหลักบนพื้นฐานขีดความสามารถภายใต้มาตรฐานเดียวกัน ตั้งแต่โอกาสแรกรับและการเข้าสู่กองทัพอากาศ ด้านการส่งเสริมโอกาสการศึกษาและความก้าวหน้า คุณภาพชีวิตและสวัสดิการ สภาวะเกื้อกูลและการทำงานร่วมกัน</p></div>
+   <div class="card" style="border-color:#e8b94a88"><h3>2.5 ปรับระบบการศึกษา</h3><p class="small">ปรับหลักสูตรและเนื้อหาให้ทันสมัยสอดคล้องกับสถานการณ์และเทคโนโลยีที่เปลี่ยนแปลงอย่างรวดเร็ว โดยหลักสูตรนักเรียนนายเรืออากาศ หลักสูตรวิทยาลัยการทัพอากาศ และหลักสูตรเสนาธิการทหารอากาศต้องได้รับการปรับปรุงและเริ่มใช้ตั้งแต่ปีงบประมาณ พ.ศ.2571</p></div>
+  </div>
+  <div class="col" style="flex:.8">
+   <div class="ph fr" style="height:200px"><img src="img/salute.jpg" style="object-position:50% 30%"><span class="cap">ภาพจากเอกสาร</span></div>
+   <div class="ph fr" style="height:200px"><img src="img/concert.jpg" style="object-position:50% 40%"><span class="cap">คอนเสิร์ตทัพฟ้าคู่ไทยเพื่อชัยพัฒนา ครั้งที่ 17 (7–9 ก.ค. 2569)</span></div>
+  </div>
+ </div>
+</section>
+
+<!-- 27 QoL + SPIRIT -->
+<section class="slide" data-sec="ด้านที่ 13 · 1">
+ <div class="hd"><div class="no"></div><div><h2>ด้านที่ 13 คุณภาพชีวิต · ด้านที่ 1 จิตวิญญาณความเป็นทหาร</h2><small>QUALITY OF LIFE · MILITARY SPIRIT</small></div></div>
+ <div class="row" style="gap:14px">
+  <div class="col" style="flex:1.55">
+   <div class="grid g2" style="gap:10px">
+    <div class="card" style="border-top:4px solid var(--cyan);padding:10px 14px"><h3 style="font-size:17px">13.1 – 13.2 สวัสดิการและความปลอดภัย</h3><p class="small" style="font-size:14px!important">ยกระดับคุณภาพชีวิตและสวัสดิการ รวมทั้งส่งเสริมสภาพความปลอดภัยในการปฏิบัติงาน · ลดปัจจัยการเกิดอุบัติเหตุภาคพื้นและภาคอากาศ (โดยเฉพาะ <b>Human Factor</b>)</p></div>
+    <div class="card" style="border-top:4px solid var(--red);padding:10px 14px"><h3 style="font-size:17px">13.3 เปลี่ยนวัฒนธรรมที่ไม่ดี</h3><p class="small" style="font-size:14px!important">เปลี่ยนแปลงพฤติกรรมและวัฒนธรรมองค์กรที่ไม่ดี เช่น <b>เมาแล้วขับ โดยใช้มาตรการลงโทษสูงสุด ไม่มียกเว้น</b></p></div>
+    <div class="card" style="border-top:4px solid var(--gold);padding:10px 14px"><h3 style="font-size:17px">13.4 – 13.6 ดูแลชั้นผู้น้อย</h3><p class="small" style="font-size:14px!important">ปรับปรุงและเพิ่มเติมที่พักอาศัยข้าราชการชั้นผู้น้อยให้เพียงพอ · สนองนโยบายกระทรวงกลาโหมเรื่อง พลทหารอาสา · แก้ไขปัญหาที่กระทบคุณภาพชีวิต เช่น <b>ปัญหาหนี้สิน</b></p></div>
+    <div class="card" style="border-top:4px solid var(--green);padding:10px 14px"><h3 style="font-size:17px">13.7 พื้นที่สันทนาการ</h3><p class="small" style="font-size:14px!important">เพิ่มและยกระดับพื้นที่สันทนาการที่มีคุณภาพ เพียงพอ และเข้าถึงได้สะดวก เพื่อเสริมสร้าง Physical &amp; Mental Readiness แก่ข้าราชการและครอบครัว</p></div>
+   </div>
+   <div class="card" style="border-color:#e8b94a;padding:10px 14px"><h3 style="font-size:17px;margin:0 0 2px">ด้านที่ 1 การส่งเสริมจิตวิญญาณความเป็นทหาร</h3><p class="small" style="font-size:14px!important"><b>1.1</b> เสริมสร้างอุดมการณ์ความเป็นทหารอากาศที่ดี เทิดทูนและจงรักภักดีต่อสถาบัน ชาติ ศาสนา พระมหากษัตริย์ และเอกลักษณ์ความเป็นไทย · <b>1.2</b> ส่งเสริมให้ดูแลกำลังพลและครอบครัวให้มีความรัก ความอบอุ่น พร้อมเสียสละในยามจำเป็นเพื่อประเทศชาติ</p></div>
+  </div>
+  <div class="col" style="flex:.8">
+   <div class="ph fr" style="height:205px"><img src="img/respect.jpg" style="object-position:50% 50%"><span class="cap">ภาพจากเอกสาร (ส่วนคุณภาพชีวิต)</span></div>
+   <div class="ph fr" style="height:205px"><img src="img/family.jpg" style="object-position:50% 40%"><span class="cap">ภาพจากเอกสาร (ส่วนจิตวิญญาณความเป็นทหาร)</span></div>
+  </div>
+ </div>
+</section>
+
+<!-- 28 INTERNATIONAL -->
+<section class="slide" data-sec="ด้านที่ 4 · ต่างประเทศ">
+ <div class="hd"><div class="no"></div><div><h2>ด้านที่ 4 ความสัมพันธ์ระหว่างประเทศ</h2><small>DEFENCE DIPLOMACY · ท่าทีต่อกองทัพมิตรประเทศ 4 ระดับ</small></div></div>
+ <div class="row" style="gap:16px">
+  <div class="col" style="flex:1.3;gap:10px">
+   <div class="card" style="padding:10px 16px"><div class="chip"><span class="num">1</span><p><b>เป็นพันธมิตร</b> แต่ต้องไม่ถูกครอบงำ</p></div></div>
+   <div class="card" style="padding:10px 16px"><div class="chip"><span class="num">2</span><p><b>เป็นคู่แข่ง</b> แต่ไม่เป็นปฏิปักษ์</p></div></div>
+   <div class="card" style="padding:10px 16px"><div class="chip"><span class="num">3</span><p><b>เป็นเพื่อน</b> ต้องแสดงความจริงใจ</p></div></div>
+   <div class="card" style="padding:10px 16px"><div class="chip"><span class="num">4</span><p><b>เป็นศัตรู</b> แต่ปรับใจกันได้</p></div></div>
+   <div class="card" style="border-color:#e8b94a88"><ul class="pts"><li><b>4.1</b> ดำเนินนโยบายด้านความสัมพันธ์ระหว่างกองทัพอากาศและกองทัพอากาศมิตรประเทศ โดยประเมินสถานการณ์และความสัมพันธ์อย่างเป็นระบบ เพื่อทบทวนท่าทีและบทบาทในการแสดงความร่วมมือให้เหมาะสม</li><li><b>4.2</b> ทบทวนและปรับปรุงการคัดเลือก การพัฒนา และการเตรียมความพร้อมกำลังพลที่ไปปฏิบัติหน้าที่ในต่างประเทศ ให้มีความรู้ ความสามารถ ทักษะด้านการทูตทหาร ประสานงาน และรวบรวมข่าวสารเชิงลึก</li></ul></div>
+  </div>
+  <div class="ph fr" style="flex:.9;height:440px"><img src="img/diplomacy.jpg" style="object-position:35% 50%"><span class="cap">ภาพจากเอกสาร: การแลกเปลี่ยนของที่ระลึกกับผู้แทนกองทัพต่างประเทศ</span></div>
+ </div>
+</section>
+
+<!-- 29 CIVIL / STRATCOM -->
+<section class="slide" data-sec="ด้านที่ 10 · พลเรือน/สื่อสาร">
+ <div class="hd"><div class="no"></div><div><h2>ด้านที่ 10 กิจการพลเรือนและการสื่อสารทางยุทธศาสตร์</h2><small>CIVIL AFFAIRS · STRATEGIC COMMUNICATION · HADR</small></div></div>
+ <div class="row" style="gap:14px">
+  <div class="col" style="flex:1.4">
+   <div class="card" style="border-top:4px solid var(--green);padding:10px 16px"><h3 style="font-size:17px">10.1 เครือข่ายความร่วมมือ</h3><p class="small" style="font-size:14px!important">สร้างเครือข่ายความร่วมมือด้วยการผนึกกำลังกับภาครัฐ ภาคเอกชน ภาคประชาชน และสื่อมวลชน เป็นเครือข่ายเชิงยุทธศาสตร์ที่เข้มแข็งในการสนับสนุนการปฏิบัติภารกิจของกองทัพอากาศ</p></div>
+   <div class="card" style="border-top:4px solid var(--cyan);padding:10px 16px"><h3 style="font-size:17px">10.2 ความพร้อมช่วยเหลือด้านมนุษยธรรมและบรรเทาสาธารณภัย</h3><p class="small" style="font-size:14px!important">ตอบสนองต่อสถานการณ์เมื่อเกิดภัยพิบัติได้อย่างรวดเร็วและทันท่วงที ด้วยการบูรณาการความร่วมมือกับทุกภาคส่วน ควบคู่กับการใช้ทรัพยากรและศักยภาพของกำลังทางอากาศอย่างคุ้มค่าและเต็มประสิทธิภาพ</p></div>
+   <div class="card" style="border-top:4px solid var(--gold);padding:10px 16px"><h3 style="font-size:17px">10.3 การสื่อสารเชิงยุทธศาสตร์</h3><p class="small" style="font-size:14px!important">ดำรงการสื่อสารเชิงยุทธศาสตร์ให้มีประสิทธิภาพ รวดเร็วทันต่อสถานการณ์ เข้าถึงกลุ่มเป้าหมาย เพื่อสร้างความเข้าใจที่ถูกต้องและความเชื่อมั่นของประชาชนต่อบทบาท ภารกิจ และการปฏิบัติของกองทัพอากาศในทุกระดับ</p></div>
+   <div class="card" style="border-color:#e8b94a88;padding:10px 16px"><h3 style="font-size:17px">10.4 บูรณาการช่องทางสื่อสาร</h3><p class="small" style="font-size:14px!important">ทั้งสื่อของกองทัพอากาศ สื่อมวลชน สื่อสังคมออนไลน์ เครือข่ายความร่วมมือ และสื่อสารผ่านกำลังพล ภายใต้หลักการ <b class="gold">“รวดเร็ว ถูกต้อง โปร่งใส รับผิดชอบ และเป็นเอกภาพ”</b></p></div>
+  </div>
+  <div class="col" style="flex:.85">
+   <div class="ph fr" style="height:150px"><img src="img/flood1.jpg" style="object-position:50% 45%"><span class="cap">ภาพจากเอกสาร: การช่วยเหลือผู้ประสบอุทกภัย</span></div>
+   <div class="ph fr" style="height:150px"><img src="img/flood2.jpg" style="object-position:50% 50%"><span class="cap">ภาพจากเอกสาร: การลำเลียงสิ่งของช่วยเหลือผู้ประสบภัย</span></div>
+   <div class="ph fr" style="height:150px"><img src="img/medic.jpg" style="object-position:50% 35%"><span class="cap">ภาพจากเอกสาร: การปฐมพยาบาลประชาชน</span></div>
+  </div>
+ </div>
+</section>
+
+<!-- 30 ROLES -->
+<section class="slide" data-sec="การมอบหมายภารกิจ">
+ <div class="hd"><div class="no"></div><div><h2>การมอบหมายภารกิจ</h2><small>MISSION ASSIGNMENT — ใครต้องทำอะไรเพื่อให้เจตนารมณ์เป็นจริง</small></div></div>
+ <div class="grid g3" style="gap:14px;align-items:stretch">
+  <div class="card" style="border-top:4px solid var(--gold)"><div class="tag">1 · COMMANDER</div><h3>หัวหน้าหน่วย</h3><ul class="pts"><li style="font-size:14px">เข้าใจยุทธศาสตร์ สมุดปกขาว เจตนารมณ์ ผบ.ทอ. อย่างถ่องแท้</li><li style="font-size:14px">กำหนดแนวทางปฏิบัติให้สอดคล้องและเป็นไปในแนวทางเดียวกัน</li><li style="font-size:14px">ยึดถือและปฏิบัติตนเป็นแบบอย่าง รักษาแบบธรรมเนียมและวัฒนธรรมองค์กรที่ดี</li><li style="font-size:14px">บริหารและทำนุบำรุงทรัพยากร: บุคลากร องค์ความรู้ เงิน ยุทโธปกรณ์ เวลา และขวัญกำลังใจ</li><li style="font-size:14px">ใช้ประสบการณ์ภายใต้สภาพแวดล้อมที่เปลี่ยนแปลง · รับฟังเสนาธิการ ตัดสินใจโดยใช้ดุลยพินิจและประสบการณ์ของตน</li><li style="font-size:14px"><b>Shape</b> สภาพแวดล้อมภายใน-ภายนอกให้เอื้อต่อภารกิจ</li><li style="font-size:14px">สุขภาพกายและใจที่ดี · ภาวะผู้นำที่ดี ไม่ใช้อารมณ์เหนือเหตุผล</li></ul></div>
+  <div class="card" style="border-top:4px solid var(--cyan)"><div class="tag">2 · STAFF</div><h3>ฝ่ายเสนาธิการ</h3><p class="small gold" style="margin-bottom:3px">ยึดถือพระบิดาฯ เป็นแบบอย่าง Staffship “รอบคอบ เสนอข้อตกลงใจ แจ่มแจ้ง ทันเวลา”</p><ul class="pts"><li style="font-size:14px">เป็นมันสมองของกองทัพ: คิด วิเคราะห์ เสนอแนะ วางแผน ติดตาม และควบคุม</li><li style="font-size:14px">เท่าทันการเปลี่ยนแปลง: ช่างสงสัย และสนใจข่าวสาร</li><li style="font-size:14px"><b>Staff-Led Process</b> ไม่ต้องรอสั่งแล้วถึงเริ่มคิด กล้าคิด กล้าเสนอแนะ</li><li style="font-size:14px">คิดและประมาณสถานการณ์ตาม The Estimation Process · เสนอ COAs เพื่อตัดสินใจให้ “ทันเวลา”</li><li style="font-size:14px">คำสั่งของผู้บังคับบัญชาศักดิ์สิทธิ์เป็นที่สิ้นสุด ต้องไม่วิพากษ์วิจารณ์ · Formulate Plans</li><li style="font-size:14px">“ไม่ยกสูง หรือ กดต่ำ” โดยใช่เหตุ · ไม่มี Agenda ส่วนตัว ไม่ดึงเกม ไม่วางยา ไม่ข้องเกี่ยวผลประโยชน์</li></ul></div>
+  <div class="card" style="border-top:4px solid var(--green)"><div class="tag">3 · OPERATOR</div><h3>ผู้ปฏิบัติ</h3><p class="small" style="color:#7cf0b8;margin-bottom:3px">ผู้รับคำสั่งและเจตนารมณ์ไปสู่การปฏิบัติ</p><ul class="pts"><li style="font-size:14px">เข้าใจยุทธศาสตร์ สมุดปกขาว และเจตนารมณ์ ผบ.ทอ. อย่างถ่องแท้</li><li style="font-size:14px">ศึกษา เข้าใจ (ภารกิจ) ฝึกฝน และปฏิบัติงานในหน้าที่ของตนให้ชำนาญเชี่ยวชาญ</li><li style="font-size:14px">เป็นผู้ปฏิบัติ (Operator) ที่ดี: ยึดถือคำสั่ง เจตนารมณ์ และนำไปสู่การปฏิบัติอย่างเคร่งครัด</li><li style="font-size:14px">รักษาวินัยโดยเคร่งครัด: กองทัพที่เข้มแข็ง ซึ่งดูง่ายที่สุดคือ <b>“ความมีวินัยของทหาร”</b></li><li style="font-size:14px">มีสุขภาพกายและใจที่ดี</li></ul></div>
+ </div>
+</section>
+
+<!-- 31 UNITY -->
+<section class="slide" data-sec="ความสามัคคี">
+ <div class="hd"><div class="no"></div><div><h2>สามัคคี 3 กลุ่ม: สัดส่วนเวลาที่ต่างกัน</h2><small>UNITY ACROSS COMMANDER · STAFF · OPERATOR</small></div></div>
+ <p style="margin-bottom:12px">ข้าราชการทั้ง 3 กลุ่ม ต้องสมัครสมานสามัคคีกัน — <b class="gold">กลุ่ม 1 + กลุ่ม 2 มีเวลา 1 ส่วน, กลุ่ม 3 มีเวลา 2 ส่วน</b></p>
+ <div class="unity" style="display:flex;height:120px;border-radius:18px;overflow:hidden;border:2px solid #e8b94a88;font-family:Prompt;font-weight:600">
+  <div style="flex:1;background:linear-gradient(160deg,#a8791d,#e8b94a);color:#07142e;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:22px">กลุ่ม 1 หัวหน้าหน่วย<small style="font-weight:400;font-size:14px">ตัดสินใจ</small></div>
+  <div style="flex:1;background:linear-gradient(160deg,#2f7bff,#37d6ff);color:#07142e;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:22px">กลุ่ม 2 เสนาธิการ<small style="font-weight:400;font-size:14px">คิด · เสนอ</small></div>
+  <div style="flex:2;background:linear-gradient(160deg,#1f8f5f,#3fd68f);color:#07142e;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:26px">กลุ่ม 3 ผู้ปฏิบัติ<small style="font-weight:400;font-size:14px">มีเวลาลงมือ 2 ส่วน</small></div>
+ </div>
+ <div class="row" style="margin-top:4px;font-family:Prompt;font-size:14px;color:var(--mute)"><div style="flex:2;text-align:center">◀ 1 ส่วน ▶</div><div style="flex:2;text-align:center">◀──── 2 ส่วน ────▶</div></div>
+ <div class="row" style="margin-top:12px;gap:14px">
+  <div class="col" style="flex:1.1">
+   <div class="card"><p class="small"><b class="gold">ความหมาย:</b> ผู้บังคับบัญชาและฝ่ายเสนาธิการต้องตัดสินใจและสั่งการให้ <b>“ทันเวลา”</b> เพื่อเหลือเวลาให้ผู้ปฏิบัติเตรียมการและปฏิบัติ</p></div>
+   <div class="card"><p class="small"><b class="gold">ผลลัพธ์:</b> ทุกกลุ่มเข้าใจเจตนารมณ์เดียวกัน เดินไปทิศทางเดียวกัน — “Direction is more important than speed”</p></div>
+  </div>
+  <div class="ph fr" style="flex:1;height:190px"><img src="img/concert.jpg" style="object-position:50% 40%"><span class="cap">คอนเสิร์ตทัพฟ้าคู่ไทยเพื่อชัยพัฒนา ครั้งที่ 17 (7–9 ก.ค. 2569) มีวัตถุประสงค์เพื่อสะท้อนความรักชาติ ความเสียสละ การปกป้องอธิปไตย และเชิดชูวีรกรรมของผู้เสียสละของกำลังพลกองทัพอากาศในการปฏิบัติภารกิจรบเพื่อปกป้องผืนแผ่นดินไทย</span></div>
+ </div>
+</section>
+
+<!-- 32 INSTITUTION -->
+<section class="slide" data-sec="สำคัญเหนือสิ่งอื่นใด">
+ <div class="hd"><div class="no"></div><div><h2>สำคัญเหนือสิ่งอื่นใด</h2><small>เทิดทูนและปกป้องสถาบันพระมหากษัตริย์</small></div></div>
+ <div class="row" style="gap:16px">
+  <div class="ph fr" style="flex:.7;height:450px"><img src="img/statue.jpg" style="object-position:50% 55%"><span class="cap">ภาพจากเอกสาร</span></div>
+  <div class="col" style="flex:1.3">
+   <div class="card" style="border-color:#e8b94a;padding:18px 22px"><p class="quote" style="font-size:24px;line-height:1.35">“จะยอมตายหมายให้เกียรติดำรง<br>จะปิดทองหลังองค์พระปฏิมา”</p><p class="small" style="color:var(--mute);margin-top:6px">เพลงพระราชนิพนธ์ในพระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร</p></div>
+   <div class="card"><p class="small">กองทัพอากาศน้อมนำพระราชปณิธานของพระบาทสมเด็จพระเจ้าอยู่หัว <b>“ประเทศชาติมั่นคง ประชาชนมีความสุข แก้ไขในสิ่งผิด สืบสานในพระราชปณิธาน ภายใต้ปรัชญาของเศรษฐกิจพอเพียง”</b> มาเป็นแนวทางในการปฏิบัติภารกิจเพื่อความมั่นคงของชาติและความผาสุกของประชาชน</p></div>
+   <div class="card"><p class="small">สำคัญเหนือสิ่งอื่นใด กองทัพอากาศจักรเทิดทูนและปกป้องสถาบันพระมหากษัตริย์ สถาบันเดียวของราชอาณาจักรไทยที่บูรพมหากษัตริยาธิราชเจ้าทรงสร้าง กอบกู้ ฟื้นฟู รักษาชาติและเกียรติภูมิ ให้พวกเราชาวไทยทุกคนได้เป็นเจ้าของแผ่นดินไทย และได้อยู่อาศัยอย่างร่มเย็นเป็นสุขถึงทุกวันนี้</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- 33 CLOSING -->
+<section class="slide cover" data-sec="">
+ <div class="bg"><img src="img/hero.jpg" style="object-position:50% 38%;filter:brightness(.45)"></div>
+ <svg class="rings" viewBox="0 0 1280 720"><g fill="none" stroke="#37d6ff" stroke-opacity=".22"><circle cx="640" cy="360" r="200"/><circle cx="640" cy="360" r="320"/><circle cx="640" cy="360" r="440" stroke-dasharray="4 10"/></g></svg>
+ <svg class="logo" width="200" height="111" viewBox="250 40 1460 810" style="margin-bottom:10px"><use href="#rtaf-logo"/></svg>
+ <div class="pill">เจตนารมณ์ผู้บัญชาการทหารอากาศ พ.ศ.2570 – 2571</div>
+ <h1 style="font-size:60px;margin-top:16px">UNBEATABLE AIR FORCE</h1>
+ <div class="grid g4" style="gap:12px;margin-top:26px;width:900px">
+  <div class="card" style="padding:10px"><h3 style="font-size:18px;margin:0">Why</h3><p class="small">เข้าใจภัยคุกคามและบทเรียน</p></div>
+  <div class="card" style="padding:10px"><h3 style="font-size:18px;margin:0">What</h3><p class="small">Unbeatable Air Force</p></div>
+  <div class="card" style="padding:10px"><h3 style="font-size:18px;margin:0">How</h3><p class="small">“Direction is more important than speed”</p></div>
+  <div class="card" style="padding:10px"><h3 style="font-size:18px;margin:0">Who</h3><p class="small">“คน” คือปัจจัยสำคัญที่สุด</p></div>
+ </div>
+ <div class="quoteb" style="margin-top:26px;font-size:25px">“จะยอมตายหมายให้เกียรติดำรง จะปิดทองหลังองค์พระปฏิมา”</div>
+ <button onclick="show(0)" style="margin-top:16px;font-family:Prompt;font-size:15px;background:#12306a;color:#fff;border:1px solid var(--gold);border-radius:99px;padding:8px 22px;cursor:pointer">🏠 กลับหน้าแรก</button>
+</section>
+
+</div></div>
+
+<div id="ui"><button onclick="show(0)">🏠 หน้าแรก</button><button onclick="toggleNav()">☰ สารบัญ (M)</button><button onclick="go(-1)">◀ ก่อนหน้า</button><button onclick="show(cur)">⟲ เล่นซ้ำ</button><button onclick="go(1)">ถัดไป ▶</button><button onclick="toggleFS()">เต็มจอ (F)</button><button onclick="window.print()">พิมพ์/PDF</button></div>
+
+<script>
+const slides=[...document.querySelectorAll('.slide')];
+const stage=document.getElementById('stage');
+let cur=0,timers=[];
+const IMP=[
+['ขยายอิทธิพลมหาอำนาจ','แนวโน้มความรุนแรงและซับซ้อนมากขึ้น เสี่ยงต่อการพึ่งพาขั้วอำนาจใดขั้วหนึ่งมากเกินไป','รักษาสมดุลด้วยการทูตฝ่ายทหาร (Defence Diplomacy) กำหนดกรอบความร่วมมือโดยยึดผลประโยชน์ของชาติ ขยายความร่วมมือและกระจายแหล่งจัดหายุทโธปกรณ์และเทคโนโลยี'],
+['ขัดแย้งในตะวันออกกลาง','หยุดชะงักของห่วงโซ่อุปทานและพลังงาน ต้นทุนสูงขึ้น กระทบความต่อเนื่องด้านการส่งกำลังบำรุง','ปรับการบริหารงบประมาณและทรัพยากรที่มีอยู่อย่างจำกัดให้คุ้มค่า และกระจายความเสี่ยงด้านห่วงโซ่อุปทาน'],
+['การใช้กำลังรูปแบบใหม่','ยุทโธปกรณ์ต้นทุนต่ำ โดรนโจมตี การรบกวนคลื่นแม่เหล็กไฟฟ้า และการโจมตีทางไซเบอร์ เกิดพร้อมกันหลายมิติ','พัฒนาขีดความสามารถกำลังทางอากาศทั้งเชิงรุกและเชิงรับ รวมมิติไซเบอร์/คลื่นแม่เหล็กไฟฟ้า เพื่อปฏิบัติการหลายมิติ <b>(Multi-Domain Operations)</b>'],
+['แตกแยกภูมิภาคและเวทีโลก','ความขัดแย้งไทย-กัมพูชายังอ่อนไหว อาจเกิดการสู้รบขึ้นได้ทุกเมื่อ','สร้างเครือข่ายมิตรประเทศและ <b>Trust Building</b> ผ่านอาเซียน ทวิภาคี พหุภาคี และทูตทหาร'],
+['สงครามข้อมูลและความคิด','ฝ่ายตรงข้ามบิดเบือนข้อมูลข่าวสาร (Disinformation) แทรกแซงและครอบงำการรับรู้ เพื่อลดความเชื่อมั่นของประชาชนฝ่ายเรา และเพิ่มความชอบธรรมของฝ่ายตรงข้าม','รักษาความได้เปรียบด้านข้อมูลข่าวสาร พัฒนาขีดความสามารถในการบริหารจัดการข้อมูลข่าวสาร และเสริมสร้างการสื่อสารเชิงยุทธศาสตร์ที่ถูกต้อง รวดเร็ว และเป็นเอกภาพ'],
+['ภัยพิบัติและสาธารณภัย','อุทกภัย วาตภัย ไฟป่า หมอกควัน ภัยแล้ง แผ่นดินไหว รวมถึงเอลนีโญและลานีญา — มีแนวโน้มเกิดบ่อยครั้งและทวีความรุนแรง','เตรียมความพร้อมด้านกำลังพล อากาศยาน ยุทโธปกรณ์ และเครื่องมือช่วยเหลือ บูรณาการกับหน่วยที่เกี่ยวข้อง']];
+document.getElementById('impacts').innerHTML=IMP.map((x,i)=>`<div class="flip" style="min-height:215px"><div class="in"><div class="f"><div class="chip"><span class="num">${i+1}</span><h3 style="font-size:19px;margin:0">${x[0]}</h3></div><p style="font-size:16px;margin-top:8px">${x[1]}</p><span class="hint">คลิกเพื่อดูการรับมือ ↻</span></div><div class="b"><div class="tag" style="color:var(--gold2)">แนวทางรับมือ</div><p style="font-size:16px;margin-top:6px">${x[2]}</p><span class="hint">↻ กลับ</span></div></div></div>`).join('');
+slides.forEach((s,i)=>{
+  const no=s.querySelector('.no');if(no)no.textContent=String(i).padStart(2,'0');
+  if(!s.classList.contains('cover')){
+    s.insertAdjacentHTML('beforeend','<div class="foot"><span>เจตนารมณ์ ผบ.ทอ. 2570–2571</span><b>'+(s.dataset.sec||'')+'</b></div>');
+    s.insertAdjacentHTML('afterbegin','<svg width="58" height="32" viewBox="250 40 1460 810" style="position:absolute;right:46px;top:28px;z-index:3;opacity:.9"><use href="#rtaf-logo"/></svg>');
+  }
+});
+slides.forEach(s=>{
+  if(s.classList.contains('cover'))return;
+  s.querySelectorAll('.card,.step,.flip,.ph').forEach(e=>{if(e.parentElement.closest('.card,.flip'))return;e.classList.add('fr');});
+});
+const jump=[4,10,11,14,16,18,30,31];
+slides[2].querySelectorAll('.step').forEach((e,i)=>e.dataset.go=jump[i]);
+const frs=s=>[...s.querySelectorAll('.fr')];
+function counter(s){
+  s.querySelectorAll('[data-count]').forEach(e=>{
+    const to=+e.dataset.count,t0=performance.now();
+    (function tick(t){const p=Math.min(1,(t-t0)/1100);e.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(tick);})(t0);
+  });
+}
+/* ===== PROJECT DETAIL ===== */
+const G=['','กลุ่ม 1 · ปฏิบัติการทางอากาศ','กลุ่ม 2 · การบัญชาการควบคุมและการป้องกันทางอากาศ','กลุ่ม 3 · ระบบตรวจจับ','กลุ่ม 4 · การลำเลียงทางอากาศ','กลุ่ม 5 · การดำรงความพร้อมและการวิจัยพัฒนา','กลุ่ม 6 · ความรักความภาคภูมิใจในสถาบันหลักของชาติ ช่วยเหลือประชาชน และขวัญกำลังใจ'];
+const GI=['','⚔️','🛡️','📡','🛫','🔧','🇹🇭'];
+const LK={mean:['MEANS: ยุทโธปกรณ์และเทคโนโลยี',13],budget:['ด้านที่ 12 งบประมาณ',24],c2:['ด้านที่ 6 C2',19],ops:['ด้านที่ 5 การยุทธการ',18],intel:['ด้านที่ 3 การข่าว',21],space:['ด้านที่ 7 อวกาศ',20],log:['ด้านที่ 8 ส่งกำลังบำรุง',24],rd:['ด้านที่ 11 วิจัยและพัฒนา',23],qol:['ด้านที่ 13 คุณภาพชีวิต',26],civil:['ด้านที่ 10 พลเรือน/HADR',28],imp:['ผลกระทบ 6 ประการ',5],les:['บทเรียนตะวันออก 2568',6],val:['ค่านิยม Pride of the Nation',12],inst:['สถาบันพระมหากษัตริย์',31],wp:['สมุดปกขาว 33 โครงการ',11]};
+const PW='อาวุธแม่นยำสูง ระยะไกลและนอกระยะสายตา อำนาจทำลายสูง เพื่อ “ป้องปราม” ตามแนวคิด “คุณภาพเหนือปริมาณ” (MEANS ข้อ 2.2)';
+const PROJ=[
+['จัดหาเครื่องบินขับไล่โจมตีทดแทน ระยะที่ 1 และ 2',1,'โครงการจัดหาเครื่องบินขับไล่ทดแทน ระยะที่ 2 เป็นโครงการสำคัญ (Flagship) ที่เอกสารกำหนดให้เตรียมความพร้อมการจัดทำคำของบประมาณ (ข้อ 12.2) เพื่อให้กองทัพอากาศดำรงความพร้อมปฏิบัติภารกิจได้อย่างมีประสิทธิภาพและต่อเนื่อง',['budget','mean','wp'],null],
+['ระบบอากาศยานไร้คนขับติดอาวุธเชิงยุทธศาสตร์ (Strategic UCAV) ระยะที่ 1',1,'สอดคล้องกับบทเรียนการใช้โดรนและ UAS ในสมรภูมิ และแนวทางนำเทคโนโลยีใหม่ เช่น Autonomous มาปรับใช้ให้ปฏิบัติภารกิจมีประสิทธิภาพมากขึ้น (MEANS ข้อ 2.3)',['les','mean'],null],
+['จัดหาอุปกรณ์กระเปาะชี้เป้า (Targeting Pod) ระยะที่ 2',1,'สนับสนุนการใช้อาวุธให้มีความแม่นยำสูง ซึ่งเป็นหัวใจของแนวคิด “คุณภาพเหนือปริมาณ” (MEANS ข้อ 2.2) และการปฏิบัติการร่วมที่เชื่อมโยงข้อมูล',['mean','ops'],null],
+['จัดหา Precision Guided Munition',1,PW,['mean','ops'],null],
+['จัดหา Supersonic Stand-off Weapon',1,PW,['mean','ops'],null],
+['จัดหา Long Range Precision Weapon',1,PW,['mean','ops'],null],
+['พัฒนาและปรับปรุงระบบป้องกันทางอากาศ (D2C2)',2,'ระบบป้องกันทางอากาศต้องเชื่อมโยงกับระบบบัญชาการและควบคุม รวมถึง ACCS และ Link-T ที่ทนต่อการโจมตีไซเบอร์และการรบกวนทางอิเล็กทรอนิกส์ (ข้อ 6.4)',['c2','ops'],null],
+['พัฒนาขีดความสามารถการควบคุมและแจ้งเตือนในอากาศ',2,'สนับสนุนการเฝ้าระวัง ตรวจจับและติดตามภัยทางอากาศ และภาพสถานการณ์ร่วม ซึ่งเป็นหัวใจของ Network Centric Operations (ข้อ 6.4–6.5)',['c2','les'],null],
+['พัฒนาการป้องกันฐานที่ตั้งทางทหารของกองทัพอากาศ (IADS) ระยะที่ 1 และ 2',2,'เอกสารกำหนดให้ปรับแผนป้องกันภัยคุกคามจากโดรนให้ครอบคลุมหน่วย ณ ที่ตั้ง ได้แก่ ดอนเมือง กองบิน โรงเรียนการบิน ศูนย์ฝึกน้ำพอง และกองกำลังทางอากาศเฉพาะกิจที่ 9 (ข้อ 5.5)',['ops','c2'],null],
+['พัฒนาขีดความสามารถ ISR แบบ Real Time โดยประยุกต์ใช้ปัญญาประดิษฐ์ (AI-assisted)',3,'การข่าวและเฝ้าตรวจลาดตระเวนประยุกต์ใช้ AI-assisted ภายใต้การกำกับของผู้เชี่ยวชาญตามหลัก Human in the Loop เพื่อสนับสนุนการตัดสินใจอย่างถูกต้อง รวดเร็ว ทันต่อสถานการณ์ (ข้อ 3.1, 6.6)',['intel','c2'],null],
+['พัฒนาและปรับปรุงระบบป้องกันทางอากาศ ระยะที่ 11',3,'สอดคล้องกับแนวทางปรับปรุงระบบแจ้งเตือนภัยล่วงหน้า ให้ครอบคลุมพื้นที่ เคลื่อนย้ายได้คล่องตัว และเพิ่มขีดความสามารถตรวจจับ UAS/Drone และขีปนาวุธวิถีโค้ง (ข้อ 6.5)',['c2','ops'],null],
+['พัฒนาและปรับปรุงระบบป้องกันทางอากาศ ระยะที่ 12',3,'สอดคล้องกับแนวทางปรับปรุงระบบแจ้งเตือนภัยล่วงหน้า ให้ครอบคลุมพื้นที่ เคลื่อนย้ายได้คล่องตัว และเพิ่มขีดความสามารถตรวจจับ UAS/Drone และขีปนาวุธวิถีโค้ง (ข้อ 6.5)',['c2','ops'],null],
+['พัฒนาการปฏิบัติการในห้วงอวกาศ (Satellite)',3,'เกี่ยวข้องกับด้านที่ 7: SSA และ Space ISR (EO/IR/SAR, SIGINT), การนำทางและสื่อสาร (PNT/SATCOM) และ Space Assisted Precision Capability',['space','les'],null],
+['จัดหาเครื่องบินลำเลียงทางยุทธวิธีอเนกประสงค์ ระยะที่ 1',4,'เป็นส่วนหนึ่งของกลุ่มการลำเลียงทางอากาศ เอกสารระบุเฉพาะชื่อโครงการ เกี่ยวข้องกับแนวทางจัดหายุทโธปกรณ์ปริมาณเหมาะสมเพียงพอ (MEANS ข้อ 2.2) และการช่วยเหลือประชาชนในยามวิกฤต',['mean','civil'],null],
+['จัดหาเครื่องบินรับ-ส่งบุคคลสำคัญทดแทนเครื่องบินลำเลียงแบบที่ 19 (Dual-use Airbus A330 MRTT+)',4,'เอกสารระบุว่าเป็นการจัดหาในลักษณะ Dual-use ทดแทนเครื่องบินลำเลียงแบบที่ 19 โดยเป็นเครื่องบินแบบ Airbus A330 MRTT+',['mean'],null],
+['จัดหาเฮลิคอปเตอร์ขนาดกลางรับ-ส่งบุคคลสำคัญ',4,'เป็นส่วนหนึ่งของกลุ่มการลำเลียงทางอากาศ เอกสารระบุเฉพาะชื่อโครงการ',['mean'],null],
+['จัดหาเฮลิคอปเตอร์รับ-ส่งบุคคลสำคัญ',4,'เป็นส่วนหนึ่งของกลุ่มการลำเลียงทางอากาศ เอกสารระบุเฉพาะชื่อโครงการ',['mean'],null],
+['พัฒนาขีดความสามารถการส่งกำลังบำรุงเครื่องบินขับไล่อเนกประสงค์ บ.ข.20/ก (Gripen 39 C/D) ระยะที่ 2',5,'สอดคล้องกับแนวทางด้านการส่งกำลังและซ่อมบำรุง: วางแผนการสะสมอะไหล่ การส่งกำลัง และการดำรงขีดความสามารถการซ่อมบำรุงภายใต้ข้อจำกัดด้านงบประมาณ เมื่อความต้องการยุทโธปกรณ์เกินกำลังการผลิตของผู้ผลิต (ข้อ 8.1)',['log','budget'],null],
+['จัดหาเครื่องช่วยฝึกทางยุทธวิธี (Tactical Simulator Center)',5,'ศูนย์การสงครามทางอากาศเป็นศูนย์รวมองค์ความรู้ยุทธวิธีการรบทางอากาศ พร้อมพัฒนาระบบเครื่องช่วยฝึกบินจำลองทางยุทธวิธี เพื่อยกระดับขีดความสามารถ (ข้อ 5.6) และการฝึก (ข้อ 5.3)',['ops'],null],
+['วิจัยและพัฒนาระบบอากาศยานไร้คนขับติดอาวุธระดับยุทธวิธี',5,'ผลักดันงานวิจัยระดับ TRL 4–8 สู่ TRL 9 และต้นแบบสายการผลิต เพื่อขยายผลร่วมกับอุตสาหกรรมป้องกันประเทศ (ข้อ 11.3) — ภาพจากเอกสาร (ส่วนการวิจัยและพัฒนา)',['rd','wp'],'img/uav1.jpg'],
+['โครงการดัดแปลงเครื่องบินปฏิบัติภารกิจฝนหลวงและควบคุมไฟป่า (BT-67)',6,'สนับสนุนการช่วยเหลือประชาชนและการบรรเทาสาธารณภัย ซึ่งไฟป่าและหมอกควันเป็นภัยที่เอกสารระบุ (ผลกระทบข้อ 2.6) พร้อมความพร้อมช่วยเหลือด้านมนุษยธรรม (ข้อ 10.2)',['civil','imp'],null],
+['โครงการสร้างบ้านพักอาศัยข้าราชการ',6,'สอดคล้องกับแนวทางปรับปรุงและเพิ่มเติมที่พักอาศัยของข้าราชการชั้นผู้น้อยให้เพียงพอต่อความต้องการ (ข้อ 13.4)',['qol'],null],
+['โครงการสร้างพระสถูปเจดีย์บรรจุพระบรมสารีริกธาตุ',6,'ส่งเสริมความรักความภาคภูมิใจในสถาบันหลักของชาติ — บริเวณพื้นที่พระมหาธาตุนภเมทนีดล นภพลภูมิสิริ จังหวัดเชียงใหม่ (ตามเอกสาร)',['inst','val'],'img/stupa.jpg'],
+['โครงการพัฒนาพื้นที่สันทนาการสำหรับข้าราชการและครอบครัว',6,'สอดคล้องกับแนวทางเพิ่มและยกระดับพื้นที่สันทนาการที่มีคุณภาพ เพียงพอ และเข้าถึงได้สะดวก เพื่อเสริมสร้าง Physical & Mental Readiness (ข้อ 13.7)',['qol'],null],
+['โครงการปรับปรุงพิพิธภัณฑ์และสถานที่สำคัญทางประวัติศาสตร์ของกองทัพอากาศ',6,'ส่งเสริมความภาคภูมิใจในรากเหง้า เกียรติภูมิความเป็นไทย และ “ความเป็นทหารอากาศไทย” ตามค่านิยม Pride of the Nation',['val','inst'],null],
+['การพัฒนาโรงพยาบาลทศมินทราธิราชเพื่อดูแลสุขภาพแก่ข้าราชการ ครอบครัว และประชาชนในพื้นที่กรุงเทพมหานครตอนเหนือ',6,'เสริมสร้างขวัญกำลังใจและการดูแลสุขภาพ สอดคล้องกับแนวทางยกระดับคุณภาพชีวิตและสวัสดิการกำลังพล (ข้อ 13.1)',['qol'],null]
+];
+/* ===== NAVIGATION ===== */
+const SECCOL={'ปณิธาน':'#e8b94a','โครงเรื่อง':'#e8b94a','เจตนารมณ์':'#e8b94a','WHY':'#ff5d6c','ENDs':'#37d6ff','WAYS':'#3fd68f','MEANS':'#ffd84a','โครงการและงานสำคัญ':'#2f7bff','ด้าน':'#37d6ff','การมอบหมายภารกิจ':'#e8b94a','ความสามัคคี':'#e8b94a','สำคัญเหนือสิ่งอื่นใด':'#e8b94a'};
+function secColor(t){for(const k in SECCOL)if(t.startsWith(k))return SECCOL[k];return '#37d6ff'}
+function buildNav(){
+  const d=document.createElement('div');d.id='nav';
+  const items=slides.map((s,i)=>{
+    const h=s.querySelector('.hd h2');
+    const title=h?h.textContent:(i===0?'ปก — เจตนารมณ์ ผบ.ทอ. 2570–2571':'ปิดท้าย — UNBEATABLE AIR FORCE');
+    const sec=s.dataset.sec||(i===0?'เริ่มต้น':'จบ');
+    return '<div class="nitem" data-i="'+i+'" style="--c:'+secColor(sec)+'"><b>'+String(i+1).padStart(2,'0')+'</b><span>'+title+'</span><i>'+sec+'</i></div>';
+  }).join('');
+  d.innerHTML='<div class="nbg"></div><div class="nbox"><h2><span>☰ สารบัญ — เลือกหน้านำเสนอ</span><span><small>กด M เปิด/ปิด · Esc ปิด&nbsp;&nbsp;</small><button class="nclose" onclick="closeNav()">✕ ปิด</button></span></h2><div class="ngrid">'+items+'</div></div>';
+  stage.appendChild(d);
+  const b=document.createElement('button');b.id='navbtn';b.textContent='☰';b.title='สารบัญ (M)';b.onclick=()=>toggleNav();document.body.appendChild(b);
+}
+function openNav(){closeProj();document.querySelectorAll('#nav .nitem').forEach(e=>e.classList.toggle('cur',+e.dataset.i===cur));document.getElementById('nav').classList.add('open');}
+function closeNav(){const n=document.getElementById('nav');if(n)n.classList.remove('open');}
+function toggleNav(){const n=document.getElementById('nav');n.classList.contains('open')?closeNav():openNav();}
+let curP=-1;
+(function(){
+  const d=document.createElement('div');d.id='pdetail';
+  d.innerHTML='<div class="pbg"></div><div class="pbox"><button class="pclose" onclick="closeProj()">✕</button><div class="pimg" id="pimg"></div><div class="ptxt"><div class="pg" id="pg"></div><h2 id="pt"></h2><p id="pw"></p><div class="tag">เกี่ยวข้องกับหัวข้อ (คลิกเพื่อไป)</div><div class="plinks" id="pl"></div><div class="pnote">หมายเหตุ: เอกสารฉบับเต็มระบุชื่อโครงการและทิศทางโดยรวม ไม่ได้ระบุรายละเอียดทางเทคนิค ราคา หรือกำหนดเวลาของแต่ละโครงการ — ข้อความนี้จึงสรุปความเชื่อมโยงกับแนวทางในเอกสาร</div><div class="pnav"><button onclick="openProj(curP-1)">◀ ก่อนหน้า</button><span id="pc"></span><button onclick="openProj(curP+1)">ถัดไป ▶</button></div></div></div>';
+  stage.appendChild(d);
+  [15,16].forEach(si=>{});
+  const lis=[...slides[15].querySelectorAll('.card li'),...slides[16].querySelectorAll('.card li')];
+  lis.forEach((li,i)=>{li.classList.add('proj');li.dataset.p=i;});
+  [slides[15],slides[16]].forEach(s=>s.querySelectorAll('.card').forEach(c=>{const n=c.querySelectorAll('li.proj').length;if(n)c.dataset.n=n;}));
+  [15,16].forEach(si=>{const h=slides[si].querySelector('.hd small');if(h)h.textContent+=' · คลิกที่ชื่อโครงการเพื่อดูรายละเอียด';});
+})();
+function openProj(i){
+  i=(i+PROJ.length)%PROJ.length;curP=i;const p=PROJ[i];
+  document.getElementById('pg').textContent=G[p[1]]+'  ·  โครงการที่ '+(i+1)+'/'+PROJ.length;
+  document.getElementById('pt').textContent=p[0];
+  document.getElementById('pw').textContent=p[2];
+  document.getElementById('pimg').innerHTML=p[4]?'<img src="'+p[4]+'" alt="">':GI[p[1]];
+  document.getElementById('pl').innerHTML=p[3].map(k=>'<button onclick="closeProj();show('+(LK[k][1]-1)+')">'+LK[k][0]+'</button>').join('');
+  document.getElementById('pc').textContent=(i+1)+' / '+PROJ.length;
+  document.getElementById('pdetail').classList.add('open');
+}
+function closeProj(){curP=-1;const d=document.getElementById('pdetail');if(d)d.classList.remove('open');}
+/* ===== MOVING MAP ===== */
+const MW=2800,MH=1700;
+let _s=11;function rnd(){_s=(_s*16807)%2147483647;return (_s-1)/2147483646}
+function blob(cx,cy,r,ph,n=24){
+  const pts=[];for(let i=0;i<n;i++){const a=i/n*6.2832;const k=1+.22*Math.sin(3*a+ph[0])+.14*Math.sin(5*a+ph[1])+.08*Math.sin(9*a+ph[2]);pts.push([cx+Math.cos(a)*r*k,cy+Math.sin(a)*r*k*.78])}
+  let d='M'+pts[0][0].toFixed(0)+','+pts[0][1].toFixed(0);
+  for(let i=0;i<n;i++){const p0=pts[(i-1+n)%n],p1=pts[i],p2=pts[(i+1)%n],p3=pts[(i+2)%n];
+    d+='C'+(p1[0]+(p2[0]-p0[0])/6).toFixed(0)+','+(p1[1]+(p2[1]-p0[1])/6).toFixed(0)+' '+(p2[0]-(p3[0]-p1[0])/6).toFixed(0)+','+(p2[1]-(p3[1]-p1[1])/6).toFixed(0)+' '+p2[0].toFixed(0)+','+p2[1].toFixed(0)}
+  return d+'Z';
+}
+const BASES=[[700,500,'ALPHA'],[1500,420,'BRAVO'],[1250,1050,'CHARLIE'],[2050,900,'DELTA'],[900,1250,'ECHO']];
+const ROUTES=['M700,500 C900,380 1200,520 1500,420 S1900,300 2200,380','M900,1250 C1000,1000 1100,900 1250,1050 S1700,1150 2050,900','M700,500 C650,800 800,1000 900,1250','M1500,420 C1450,650 1350,850 1250,1050','M2050,900 C2200,700 2250,500 2200,380','M2200,380 C2300,600 2100,780 2050,900'];
+function buildMap(){
+  let h='<defs><linearGradient id="trailG" gradientUnits="userSpaceOnUse" x1="-8" y1="0" x2="-70" y2="0"><stop offset="0" stop-color="#ffd986" stop-opacity=".9"/><stop offset="1" stop-color="#ffd986" stop-opacity="0"/></linearGradient><linearGradient id="trailC" gradientUnits="userSpaceOnUse" x1="-6" y1="0" x2="-55" y2="0"><stop offset="0" stop-color="#37d6ff" stop-opacity=".9"/><stop offset="1" stop-color="#37d6ff" stop-opacity="0"/></linearGradient><radialGradient id="sweepG" cx="0" cy="0" r="340" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#37d6ff" stop-opacity=".05"/><stop offset="1" stop-color="#37d6ff" stop-opacity=".16"/></radialGradient></defs>';
+  /* land + contours */
+  const L=[[500,420,420],[1350,520,520],[2150,520,430],[800,1200,460],[1700,1180,480],[2350,1180,380],[1450,200,300]];
+  L.forEach(([x,y,r])=>{const ph=[rnd()*6.28,rnd()*6.28,rnd()*6.28];
+    h+='<path d="'+blob(x,y,r,ph)+'" fill="rgba(40,110,200,.07)" stroke="rgba(120,205,255,.22)" stroke-width="2"/>';
+    [.82,.64,.46,.30].forEach((k,i)=>{h+='<path d="'+blob(x,y,r*k,ph)+'" fill="none" stroke="rgba(120,205,255,'+(.11-i*.02)+')" stroke-width="1.3"/>'});
+  });
+  /* grid + coordinates */
+  for(let x=0;x<=MW;x+=200)h+='<line x1="'+x+'" y1="0" x2="'+x+'" y2="'+MH+'" stroke="rgba(55,214,255,.05)"/>';
+  for(let y=0;y<=MH;y+=200)h+='<line x1="0" y1="'+y+'" x2="'+MW+'" y2="'+y+'" stroke="rgba(55,214,255,.05)"/>';
+  for(let x=0;x<=MW;x+=800)for(let y=0;y<=MH;y+=800){const lon=92+x/MW*22,lat=24-y/MH*18;h+='<text x="'+(x+6)+'" y="'+(y-6)+'" font-family="Consolas,monospace" font-size="13" fill="rgba(127,233,255,.25)">'+lat.toFixed(1)+'°N '+lon.toFixed(1)+'°E</text>'}
+  /* air defence zones */
+  const zp=[rnd()*6.28,rnd()*6.28,rnd()*6.28];
+  h+='<path d="'+blob(1450,820,760,zp,28)+'" fill="none" stroke="rgba(232,185,74,.3)" stroke-width="2.5" stroke-dasharray="18 12"><animate attributeName="stroke-dashoffset" to="-120" dur="30s" repeatCount="indefinite"/></path>';
+  h+='<text x="760" y="420" font-family="Consolas,monospace" font-size="20" fill="rgba(255,217,134,.4)" letter-spacing="4">AIR DEFENCE ZONE</text>';
+  /* routes */
+  ROUTES.forEach((d,i)=>{h+='<path d="'+d+'" fill="none" stroke="rgba(255,217,134,.28)" stroke-width="2.2" stroke-dasharray="12 10"><animate attributeName="stroke-dashoffset" to="'+(i%2?'-88':'88')+'" dur="16s" repeatCount="indefinite"/></path>'});
+  /* data links with packets */
+  [[0,1],[1,2],[2,3],[0,4],[4,2],[3,1]].forEach(([a,b],i)=>{const A=BASES[a],B=BASES[b];
+    h+='<line x1="'+A[0]+'" y1="'+A[1]+'" x2="'+B[0]+'" y2="'+B[1]+'" stroke="rgba(55,214,255,.35)" stroke-width="1.6" stroke-dasharray="3 7"/>';
+    h+='<circle r="5" fill="#37d6ff"><animateMotion dur="'+(8+i*1.5)+'s" begin="-'+i+'s" repeatCount="indefinite" path="M'+A[0]+','+A[1]+' L'+B[0]+','+B[1]+'"/></circle>';
+  });
+  /* bases */
+  BASES.forEach(([x,y,n])=>{
+    h+='<g transform="translate('+x+','+y+')"><circle class="rr" r="260" fill="none" stroke="#37d6ff" stroke-width="2"/><circle r="90" fill="none" stroke="rgba(55,214,255,.4)" stroke-dasharray="4 6"/><circle r="170" fill="none" stroke="rgba(55,214,255,.28)" stroke-dasharray="4 8"/><circle r="260" fill="none" stroke="rgba(55,214,255,.18)"/><path d="M0,-16 L16,0 L0,16 L-16,0Z" fill="#e8b94a" stroke="#fff" stroke-width="1.5"/><text x="22" y="-14" font-family="Consolas,monospace" font-size="18" fill="#ffd986" letter-spacing="3">'+n+'</text></g>';
+  });
+  /* radar sweeps */
+  [[1250,1050,16]].forEach(([x,y,t])=>{h+='<g transform="translate('+x+','+y+')"><g><path d="M0,0 L340,0 A340,340 0 0 0 261,-219Z" fill="url(#sweepG)"/><line x1="0" y1="0" x2="340" y2="0" stroke="#37d6ff" stroke-width="2.5" opacity=".8"/><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="'+t+'s" repeatCount="indefinite"/></g></g>'});
+  /* aircraft */
+  const PL='M16,0 L-9,-9 L-3,0 L-9,9Z';
+  ROUTES.forEach((d,i)=>{
+    [[0,46+i*5,'#ffd986','trailG',1.0]].forEach(([_,dur,col,tg,sc],j)=>{
+      h+='<g><animateMotion dur="'+dur+'s" begin="-'+(i*5+j*9)+'s" repeatCount="indefinite" rotate="auto" path="'+d+'"/><line x1="-8" y1="0" x2="-70" y2="0" stroke="url(#'+tg+')" stroke-width="3"/><path d="'+PL+'" fill="'+col+'" transform="scale('+sc+')" stroke="#07142e" stroke-width="1"/></g>';
+    });
+  });
+  /* threat tracks */
+  ['M2650,280 C2350,450 2150,700 2060,880','M2700,1350 C2400,1200 2200,1050 2070,920'].forEach((d,i)=>{
+    h+='<g><animateMotion dur="'+(48+i*10)+'s" begin="-'+(i*10)+'s" repeatCount="indefinite" rotate="auto" path="'+d+'"/><path d="M12,0 L-8,-8 L-8,8Z" fill="none" stroke="#ff5d6c" stroke-width="2.4"/><circle r="22" fill="none" stroke="#ff5d6c" stroke-dasharray="3 4"><animate attributeName="r" values="16;22;16" dur="5s" repeatCount="indefinite"/></circle><text x="-14" y="-26" font-family="Consolas,monospace" font-size="14" fill="#ff8f99">UNK-0'+(i+1)+'</text></g>';
+  });
+  /* waypoint tags */
+  [[1000,470],[1350,470],[1380,820],[1650,1100],[2200,700]].forEach(([x,y],i)=>{h+='<g transform="translate('+x+','+y+')"><path d="M0,-9 L8,6 L-8,6Z" fill="none" stroke="#7fe9ff" stroke-width="1.6"/><text x="12" y="6" font-family="Consolas,monospace" font-size="14" fill="rgba(127,233,255,.8)">WPT '+String(i+1).padStart(2,'0')+'</text></g>'});
+  document.getElementById('mapsvg').innerHTML=h;
+}
+let lastCam={x:1400,y:850};
+function camTarget(i){
+  if(i===0)return {x:1400,y:850,s:1.0};
+  const fr=v=>v-Math.floor(v);
+  return {x:1000+fr(i*0.381966)*800,y:620+fr(i*0.618034)*460,s:1+0.12*fr(i*0.2718+.3)};
+}
+function dm(v,pos,neg){const a=Math.abs(v),d=Math.floor(a),m=Math.round((a-d)*60);return d+'°'+String(m).padStart(2,'0')+"'"+(v>=0?pos:neg)}
+function camMove(){
+  const t=camTarget(cur),svg=document.getElementById('mapsvg');
+  svg.style.transform='translate('+(640-t.x*t.s)+'px,'+(360-t.y*t.s)+'px) scale('+t.s+')';
+  const hdg=(Math.round(Math.atan2(t.x-lastCam.x,-(t.y-lastCam.y))*180/Math.PI)+360)%360;
+  lastCam={x:t.x,y:t.y};
+  document.getElementById('hhdg').textContent=String(hdg).padStart(3,'0');
+  document.getElementById('arrow').style.transform='rotate('+hdg+'deg)';
+  document.getElementById('hpos').textContent='LAT '+dm(24-t.y/MH*18,'N','S')+'  LON '+dm(92+t.x/MW*22,'E','W');
+  document.getElementById('hwp').textContent='WPT '+String(cur+1).padStart(2,'0')+'/'+String(slides.length).padStart(2,'0');
+  const p=document.createElement('div');p.className='ping';stage.appendChild(p);setTimeout(()=>p.remove(),1900);
+  const jet=document.getElementById('jet');
+  if(jet){jet.style.top=(cur/(slides.length-1)*500)+'px';}
+  document.querySelectorAll('#tracker .wp').forEach(w=>w.classList.toggle('pass',+w.dataset.i<=cur));
+}
+function clock(){const d=new Date();document.getElementById('hutc').textContent='UTC '+d.toISOString().substr(11,8);}
+function buildTracker(){
+  const tr=document.getElementById('tracker');
+  const secs=[0,1,3,9,10,13,15,17,29,31];
+  let h='<div class="line"></div>';
+  secs.forEach(i=>{h+='<div class="wp" data-i="'+i+'" style="top:'+(i/(slides.length-1)*500)+'px"></div>'});
+  h+='<svg id="jet" class="jet" viewBox="-14 -14 28 28" width="26" height="26" style="top:0"><path d="M0,14 L-10,-10 L0,-4 L10,-10Z" fill="#ffd986" stroke="#07142e" stroke-width="1.2"/></svg>';
+  tr.innerHTML=h;
+}
+function fit(){stage.style.transform='scale('+Math.min(innerWidth/1280,innerHeight/720)+')';}
+function show(n){
+  timers.forEach(clearTimeout);timers=[];closeProj();
+  cur=Math.max(0,Math.min(slides.length-1,n));
+  slides.forEach((s,i)=>{s.classList.toggle('active',i===cur);s.classList.toggle('prev',i<cur);});
+  const s=slides[cur];
+  s.querySelectorAll('.flip.flipped,.card.pop').forEach(e=>e.classList.remove('flipped','pop'));
+  const f=frs(s);f.forEach(e=>e.classList.remove('on'));
+  const step=f.length>10?260:380;
+  f.forEach((e,i)=>timers.push(setTimeout(()=>e.classList.add('on'),350+i*step)));
+  counter(s);camMove();
+  document.getElementById('prog').style.width=((cur+1)/slides.length*100)+'%';
+  document.getElementById('count').textContent=(cur+1)+' / '+slides.length;
+  try{history.replaceState(null,'','#'+(cur+1))}catch(e){}
+}
+function go(d){show(cur+d)}
+function toggleFS(){if(document.fullscreenElement)document.exitFullscreen();else document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen();}
+addEventListener('keydown',e=>{
+  const nv=document.getElementById('nav');
+  if(e.key==='m'||e.key==='M'||e.key==='g'||e.key==='G'){toggleNav();return}
+  if(nv&&nv.classList.contains('open')){if(e.key==='Escape')closeNav();return}
+  if(curP>=0){if(e.key==='Escape'){closeProj();}else if(e.key==='ArrowRight'){openProj(curP+1)}else if(e.key==='ArrowLeft'){openProj(curP-1)}e.preventDefault();return}
+  if(['ArrowRight','PageDown',' ','Enter'].includes(e.key)){e.preventDefault();go(1)}
+  else if(['ArrowLeft','PageUp','Backspace'].includes(e.key)){e.preventDefault();go(-1)}
+  else if(e.key==='Home'||e.key==='h'||e.key==='H')show(0);
+  else if(e.key==='End')show(slides.length-1);
+  else if(e.key==='r'||e.key==='R')show(cur);
+  else if(e.key==='f'||e.key==='F')toggleFS();
+});
+let tx=null;addEventListener('touchstart',e=>tx=e.touches[0].clientX);
+addEventListener('touchend',e=>{if(tx===null)return;const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)go(d<0?1:-1);tx=null});
+addEventListener('click',e=>{
+  const t=e.target;
+  if(t.closest('#ui')||t.closest('#home')||t.closest('button:not(.chipb)'))return;
+  if(t.closest('#nav')){const it=t.closest('.nitem');if(it){closeNav();show(+it.dataset.i);}else if(t.classList.contains('nbg'))closeNav();return;}
+  if(t.closest('#pdetail')){if(t.classList.contains('pbg'))closeProj();return;}
+  const pj=t.closest('.proj');if(pj){openProj(+pj.dataset.p);return;}
+  const chip=t.closest('.chipb');
+  if(chip){document.querySelectorAll('.chipb').forEach(c=>c.classList.remove('on'));chip.classList.add('on');
+    const k=chip.dataset.t,T={fpv:'Small FPV Drone — ขนาดเล็ก ต้นทุนต่ำ ตรวจจับได้ยาก',swarm:'Swarm Drone — ใช้ปริมาณมากพร้อมกันเพื่อสร้างความเสียหาย',fiber:'Fiber Optic Drone — เปลี่ยนลักษณะภัยคุกคามในพื้นที่ ตรวจจับยากและโจมตีได้รวดเร็ว',kami:'Kamikaze Drone — สร้างความเสียหายต่อกำลังพล ทรัพย์สิน และโครงสร้างพื้นฐาน'};
+    document.getElementById('radar').dataset.sel=k;
+    document.getElementById('thr').innerHTML=k?T[k]+'<br><b class="gold">รับมือ: บูรณาการตรวจจับ พิสูจน์ทราบ แจ้งเตือน ป้องกัน (C-UAS) เชื่อมกับ C2</b>':'คลิกประเภทโดรนเพื่อดูลักษณะภัยคุกคาม — ทุกชนิดต้องมี <b class="gold">มาตรการ C-UAS เชื่อมกับระบบบัญชาการและควบคุม</b>';
+    return;}
+  const cn=t.closest('.cn');
+  if(cn){document.querySelectorAll('.cn').forEach(c=>c.classList.remove('sel'));cn.classList.add('sel');document.getElementById('chaintxt').textContent=cn.dataset.d;return;}
+  const fl=t.closest('.flip');if(fl){fl.classList.toggle('flipped');return;}
+  const st=t.closest('.step');if(st&&st.dataset.go){show(+st.dataset.go-1);return;}
+  const cd=t.closest('.card');
+  if(cd){const was=cd.classList.contains('pop');document.querySelectorAll('.card.pop').forEach(c=>c.classList.remove('pop'));if(!was)cd.classList.add('pop');return;}
+  document.querySelectorAll('.card.pop').forEach(c=>c.classList.remove('pop'));
+  go(e.clientX>innerWidth/2?1:-1);
+});
+document.querySelectorAll('[data-seg]').forEach(c=>{
+  c.addEventListener('mouseenter',()=>document.getElementById('donut').dataset.hl=c.dataset.seg);
+  c.addEventListener('mouseleave',()=>document.getElementById('donut').dataset.hl='');
+});
+buildNav();buildMap();buildTracker();clock();setInterval(clock,1000);
+addEventListener('resize',fit);fit();
+show((parseInt(location.hash.slice(1))||1)-1);
+</script>
+</body>
+</html>
